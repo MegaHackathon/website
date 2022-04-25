@@ -759,14 +759,18 @@ export const Content30DataSource = {
           icon: {
             className: 'content3-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
+            'https://img.icons8.com/nolan/344/00C6FF/0072FF/event-accepted-tentatively.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '企业资源管理' },
+          title: { 
+            className: 'content3-title', 
+            children: 
+            'What is the hackathon timeline?' 
+          },
           content: {
             className: 'content3-content',
             children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+              'The hackathon will last for 4 weeks, from June 15th to July 8th.',
           },
         },
       },
@@ -779,14 +783,19 @@ export const Content30DataSource = {
           icon: {
             className: 'content3-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
+              'https://img.icons8.com/nolan/344/00C6FF/0072FF/hardworking--v1.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云安全' },
+          title: { 
+            className: 'content3-title', 
+            children: 
+              'Who can attend?' 
+            },
           content: {
             className: 'content3-content',
             children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+            "Mega Hackathon is open to  EVERYONE. There is no experience required. As long as you get access to the Internet," +
+            " you can attend",
           },
         },
       },
@@ -799,14 +808,17 @@ export const Content30DataSource = {
           icon: {
             className: 'content3-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
+              'https://img.icons8.com/nolan/344/00C6FF/0072FF/address-book.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云监控' },
+          title: { 
+            className: 'content3-title', 
+            children: 'How to register myself in the hackathon?' 
+          },
           content: {
             className: 'content3-content',
             children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+              'All you need is to fill our form on Dorahacks and join Discord, we will guide you through everything there',
           },
         },
       },
@@ -819,14 +831,17 @@ export const Content30DataSource = {
           icon: {
             className: 'content3-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
+              'https://img.icons8.com/nolan/344/00C6FF/0072FF/ask-question.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '移动' },
+          title: { 
+            className: 'content3-title', 
+            children: 'I have more questions...' 
+          },
           content: {
             className: 'content3-content',
             children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
+              'Join the discord channel and Reach us directly at (wagmi.megahack@gmail.com) we would happy to help you.',
           },
         },
       },
@@ -839,14 +854,18 @@ export const Content30DataSource = {
           icon: {
             className: 'content3-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png',
+            'https://img.icons8.com/nolan/344/00C6FF/0072FF/group-of-projects.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '分布式中间件' },
+          title: { 
+            className: 'content3-title', 
+            children: 'What kind of project can we submit?' 
+          },
           content: {
             className: 'content3-content',
             children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
+            "As long as your project fits into one of the 4 tracks, you're good to go. " +
+            "We also put some ideas under each track for you to brainstorm. ",
           },
         },
       },
@@ -859,14 +878,18 @@ export const Content30DataSource = {
           icon: {
             className: 'content3-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png',
+              'https://img.icons8.com/nolan/344/00C6FF/0072FF/clothes.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '大数据' },
+          title: { 
+            className: 'content3-title', 
+            children: "Will there be merch?" 
+          },
           content: {
             className: 'content3-content',
             children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
+            "Yes! Our merch is in the form of NFTs and it is limited edition." +
+            " You can either purchase one or stay tuned to our merch promotion events.",
           },
         },
       },
@@ -924,7 +947,7 @@ export const Footer20DataSource = {
       },
       {
         name: 'email',
-        href: 'maito:wagmi.megahack@gmail.com',
+        href: 'mailto:wagmi.megahack@gmail.com',
         className: 'links-email',
         children:
           'https://img.icons8.com/nolan/344/E6E6E6/808080/new-post.png'
