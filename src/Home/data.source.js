@@ -44,7 +44,7 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>Tracks and Prizes</p>
+                  <p>Tracks & Prizes</p>
                 </span>
               ),
               name: 'text',
@@ -63,7 +63,7 @@ export const Nav00DataSource = {
                 <span>
                   <span>
                     <span>
-                      <p>Sponsors and Speakers</p>
+                      <p>Sponsors & Speakers</p>
                     </span>
                   </span>
                 </span>
@@ -82,7 +82,7 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>FAQ</p>
+                  <p>FAQ & Contact</p>
                 </span>
               ),
               name: 'text',

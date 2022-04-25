@@ -21,7 +21,7 @@ class Footer2 extends React.PureComponent {
               );
             })}
           </TweenOne>
-          <a href={dataSource.copyright.href}>
+          <a href={dataSource.copyright.href} style={{color:"#fafafa",}}>
             <TweenOne
               animation={{ x: '+=30', opacity: 0, type: 'from' }}
               key="copyright"
