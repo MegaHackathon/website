@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mega Hackathon",
+  "name": "Mega Hackathon Landing page",
+  "description": "Mega Hackathon 2022",
   "icons": [
     {
       "src": "favicon.ico",
