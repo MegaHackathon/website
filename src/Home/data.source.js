@@ -1,7 +1,12 @@
 import React from 'react';
-import nu from './images/nublockchain.png';
-import usc from './images/usc_cssa.jpg';
+import nu from './images/partners/nublockchain.png';
+import usc from './images/partners/usc_cssa.jpg';
 import logo from './images/mega_logo.PNG';
+import jackxu from './images/speakers/jackxu_icon.jpg';
+import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
+import zackrosen from './images/speakers/zackrosen_icon.jpg';
+import camerondennis from './images/speakers/camerondennis_icon.jpg';
+
 
 // Nav bar
 export const Nav00DataSource = {
@@ -82,7 +87,7 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>FAQ & Contact</p>
+                  <p>FAQ</p>
                 </span>
               ),
               name: 'text',
@@ -513,8 +518,7 @@ export const Teams21DataSource = {
           name: 'image',
           className: 'teams2-image',
           url: "https://www.linkedin.com/in/boyuan-xu/",
-          children:
-            'https://media-exp1.licdn.com/dms/image/C5603AQH8AC2K_H0RHA/profile-displayphoto-shrink_800_800/0/1649179774475?e=1656547200&v=beta&t=rdpLvyTJYzQNVt1NVpTltyp_hexyLKg1YOvJ5vxal8A',
+          children: jackxu,
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
@@ -545,8 +549,7 @@ export const Teams21DataSource = {
           name: 'image',
           className: 'teams2-image',
           url: "https://www.linkedin.com/in/mattytay/",
-          children:
-            'https://media-exp1.licdn.com/dms/image/C5603AQH-81kfZyuG3Q/profile-displayphoto-shrink_800_800/0/1642727271855?e=1656547200&v=beta&t=eghXwlhRv6wqUPxLaWHKtnyNRyoA8ghT0PmfLcEhMjs',
+          children: mattytaylor,
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
@@ -577,8 +580,7 @@ export const Teams21DataSource = {
           name: 'image',
           className: 'teams2-image',
           url: "https://www.linkedin.com/in/zrosen/",
-          children:
-            'https://media-exp1.licdn.com/dms/image/C4D03AQEULXzQD6-69A/profile-displayphoto-shrink_800_800/0/1602826440728?e=1656547200&v=beta&t=gtBxPVWv7UqCCnn6sVwz9GmlRQSKM5DwywZmtXe6aLo',
+          children: zackrosen,
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
@@ -609,8 +611,7 @@ export const Teams21DataSource = {
           name: 'image',
           className: 'teams2-image',
           url: "https://www.linkedin.com/in/cameron-dennis-b93b25104/",
-          children:
-            'https://media-exp1.licdn.com/dms/image/C5603AQEJx75_wNFGsQ/profile-displayphoto-shrink_800_800/0/1620738348612?e=1656547200&v=beta&t=C9HJ5J9Ni8yspFCtTzdU6tQ2RILEyh5dRAWdcsOB3ms',
+          children: camerondennis,
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
@@ -765,7 +766,7 @@ export const Content30DataSource = {
           title: { 
             className: 'content3-title', 
             children: 
-            'What is the hackathon timeline?' 
+            'What is the timeline?' 
           },
           content: {
             className: 'content3-content',
@@ -813,7 +814,7 @@ export const Content30DataSource = {
           textWrapper: { className: 'content3-text' },
           title: { 
             className: 'content3-title', 
-            children: 'How to register myself in the hackathon?' 
+            children: 'How do I register?' 
           },
           content: {
             className: 'content3-content',
@@ -841,7 +842,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              'Join the discord channel and Reach us directly at (wagmi.megahack@gmail.com) we would happy to help you.',
+              'Join the discord channel and Reach us directly at wagmi.megahack@gmail.com. We would happy to help you.',
           },
         },
       },

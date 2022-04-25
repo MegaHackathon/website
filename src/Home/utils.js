@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from 'antd';
 
-export const isImg = /^\/static\/media\/|^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?/;
+export const isImg = /\/static\/media\/|^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?/;
 
 export const getChildrenToRender = (item, i) => {
 
