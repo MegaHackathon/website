@@ -21,24 +21,27 @@ class Footer2 extends React.PureComponent {
               );
             })}
           </TweenOne>
-          <TweenOne
-            animation={{ x: '+=30', opacity: 0, type: 'from' }}
-            key="copyright"
-            {...dataSource.copyright}
-          >
-            {dataSource.copyright.children.map((item, i) =>
-              React.createElement(
-                item.name.indexOf('title') === 0 ? 'h1' : 'div',
-                { key: i.toString(), ...item },
-                typeof item.children === 'string' && item.children.match(isImg)
-                  ? React.createElement('img', {
-                      src: item.children,
-                      alt: 'img',
-                    })
-                  : item.children
-              )
-            )}
-          </TweenOne>
+          <a href={dataSource.copyright.href}>
+            <TweenOne
+              animation={{ x: '+=30', opacity: 0, type: 'from' }}
+              key="copyright"
+              {...dataSource.copyright}
+            >
+              
+              {dataSource.copyright.children.map((item, i) =>
+                React.createElement(
+                  item.name.indexOf('title') === 0 ? 'h1' : 'div',
+                  { key: i.toString(), ...item },
+                  typeof item.children === 'string' && item.children.match(isImg)
+                    ? React.createElement('img', {
+                        src: item.children,
+                        alt: 'img',
+                      })
+                    : item.children
+                )
+              )}
+            </TweenOne>
+          </a>
         </OverPack>
       </div>
     );

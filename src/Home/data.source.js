@@ -880,6 +880,7 @@ export const Footer20DataSource = {
   OverPack: { className: 'home-page footer2', playScale: 0.05 },
   copyright: {
     className: 'copyright',
+    href: '#Nav0_0',
     children: [
       {
         name: 'image',
@@ -891,17 +892,17 @@ export const Footer20DataSource = {
         children: 'Mega Hackathon 2022',
         className: 'copyright-group',
       },
-      {
-        name: 'image2',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/fgGmQUfiUfSBfvsQpfOj.svg',
-        className: 'copyright-line',
-      },
-      {
-        name: 'copyright',
-        children: 'Copyright © Mega Hackathon 2022',
-        className: 'copyright-text',
-      },
+      // {
+      //   name: 'image2',
+      //   children:
+      //     'https://gw.alipayobjects.com/zos/rmsportal/fgGmQUfiUfSBfvsQpfOj.svg',
+      //   className: 'copyright-line',
+      // },
+      // {
+      //   name: 'copyright',
+      //   children: 'Copyright © Mega Hackathon 2022',
+      //   className: 'copyright-text',
+      // },
     ],
   },
   links: {
@@ -927,7 +928,14 @@ export const Footer20DataSource = {
         className: 'links-email',
         children:
           'https://img.icons8.com/nolan/344/E6E6E6/808080/new-post.png'
-        },
+      },
+      {
+        name: 'dorahacks',
+        href: 'https://dorahacks.io/hackathon/23/',
+        className: 'links-dorahacks',
+        children:
+          'https://img.icons8.com/nolan/344/E6E6E6/808080/internet.png',
+      },
     ],
   },
 };
