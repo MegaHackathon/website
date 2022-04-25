@@ -13,7 +13,9 @@ class Teams2 extends React.PureComponent {
           <Row>
             <Col span={7}>
               <div {...image}>
-                <img src={image.children} alt="img" />
+                <a href={image.url}>
+                  <img src={image.children} alt="img" />
+                </a>
               </div>
             </Col>
             <Col span={17}>
