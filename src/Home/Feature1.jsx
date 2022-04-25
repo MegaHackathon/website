@@ -29,26 +29,10 @@ function Content1(props) {
     <div {...tagProps} {...dataSource.wrapper}>
       <OverPack {...dataSource.OverPack} component={Row}>
         <TweenOne
-          key="img"
+          key="title"
           animation={animType.one}
           resetStyle
-          {...dataSource.imgWrapper}
-          component={Col}
-          componentProps={{
-            md: dataSource.imgWrapper.md,
-            xs: dataSource.imgWrapper.xs,
-          }}
-        >
-          <span {...dataSource.img}>
-            <img src={dataSource.img.children} width="100%" alt="img" />
-          </span>
-        </TweenOne>
-        <QueueAnim
-          key="text"
-          type={animType.queue}
-          leaveReverse
-          ease={['easeOutQuad', 'easeInQuad']}
-          {...dataSource.textWrapper}
+          {...dataSource.text1Wrapper}
           component={Col}
           componentProps={{
             md: dataSource.text1Wrapper.md,
@@ -58,6 +42,19 @@ function Content1(props) {
           <h2 key="h1" {...dataSource.title}>
             {dataSource.title.children}
           </h2>
+        </TweenOne>
+        <QueueAnim
+          key="text"
+          type={animType.queue}
+          leaveReverse
+          ease={['easeOutQuad', 'easeInQuad']}
+          {...dataSource.text2Wrapper}
+          component={Col}
+          componentProps={{
+            md: dataSource.text2Wrapper.md,
+            xs: dataSource.text2Wrapper.xs,
+          }}
+        >
           <div key="p" {...dataSource.content}>
             {dataSource.content.children}
           </div>
