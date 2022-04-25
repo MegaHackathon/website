@@ -1,10 +1,15 @@
 import React from 'react';
+import nu from './images/nublockchain.png';
+import usc from './images/usc_cssa.jpg';
+import logo from './images/mega_logo.PNG';
+
+// Nav bar
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
     className: 'header0-logo',
-    children: 'https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg',
+    children: logo,
   },
   Menu: {
     className: 'header0-menu',
@@ -13,18 +18,14 @@ export const Nav00DataSource = {
         name: 'item0',
         className: 'header0-item',
         children: {
-          href: '#',
+          href: '#Feature1_0',
           children: [
             {
               children: (
                 <span>
                   <span>
                     <span>
-                      <span>
-                        <span>
-                          <p>About</p>
-                        </span>
-                      </span>
+                      <p>About</p>
                     </span>
                   </span>
                 </span>
@@ -33,64 +34,12 @@ export const Nav00DataSource = {
             },
           ],
         },
-        subItem: [
-          {
-            name: 'sub0',
-            className: 'item-sub',
-            children: {
-              className: 'item-sub-item',
-              children: [
-                {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
-                  name: 'title',
-                  className: 'item-title',
-                  children: 'Ant Design',
-                },
-                {
-                  name: 'content',
-                  className: 'item-content',
-                  children: '企业级 UI 设计体系',
-                },
-              ],
-            },
-          },
-          {
-            name: 'sub1',
-            className: 'item-sub',
-            children: {
-              className: 'item-sub-item',
-              children: [
-                {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
-                  name: 'title',
-                  className: 'item-title',
-                  children: 'Ant Design',
-                },
-                {
-                  name: 'content',
-                  className: 'item-content',
-                  children: '企业级 UI 设计体系',
-                },
-              ],
-            },
-          },
-        ],
       },
       {
         name: 'item1',
         className: 'header0-item',
         children: {
-          href: '#',
+          href: '#Feature6_0',
           children: [
             {
               children: (
@@ -107,16 +56,14 @@ export const Nav00DataSource = {
         name: 'item2',
         className: 'header0-item',
         children: {
-          href: '#',
+          href: '#Content12_0',
           children: [
             {
               children: (
                 <span>
                   <span>
                     <span>
-                      <span>
-                        <p>Sponsors and Speakers</p>
-                      </span>
+                      <p>Sponsors and Speakers</p>
                     </span>
                   </span>
                 </span>
@@ -130,12 +77,12 @@ export const Nav00DataSource = {
         name: 'item3',
         className: 'header0-item',
         children: {
-          href: '#',
+          href: '#Teams3_0',
           children: [
             {
               children: (
                 <span>
-                  <p>FAQ Nav</p>
+                  <p>FAQ</p>
                 </span>
               ),
               name: 'text',
@@ -147,6 +94,8 @@ export const Nav00DataSource = {
   },
   mobileMenu: { className: 'header0-mobile-menu' },
 };
+
+// Landing page header
 export const Banner01DataSource = {
   wrapper: { className: 'banner0' },
   textWrapper: { className: 'banner0-text-wrapper' },
@@ -156,18 +105,21 @@ export const Banner01DataSource = {
   },
   content: {
     className: 'banner0-content',
-    children: '一个高效的页面动画解决方案',
+    children: 'June 15th - July 8th, 2022',
   },
   button: { className: 'banner0-button', children: 'Learn More' },
 };
+
+// About Section
 export const Feature10DataSource = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },
   OverPack: { className: 'home-page content1', playScale: 0.3 },
   imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
   img: {
-    children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
+    children: 'https://i.imgur.com/I7IYd4K_d.webp?maxwidth=760&fidelity=grand',
   },
-  textWrapper: { className: 'content1-text', md: 14, xs: 24 },
+  text1Wrapper: { className: 'content1-text', md: 10, xs: 24 },
+  text2Wrapper: { className: 'content1-text', md: 14, xs: 24 },
   title: {
     className: 'content1-title',
     children: (
@@ -191,6 +143,8 @@ export const Feature10DataSource = {
     ),
   },
 };
+
+// Bounties Section
 export const Feature60DataSource = {
   wrapper: { className: 'home-page-wrapper feature6-wrapper' },
   OverPack: { className: 'home-page feature6', playScale: 0.3 },
@@ -226,14 +180,27 @@ export const Feature60DataSource = {
             md: 8,
             xs: 24,
             className: 'feature6-number-wrapper',
+            name: 'child2',
+            number: {
+              className: 'feature6-number',
+              unit: { className: 'feature6-unit', children: 'K' },
+              toText: true,
+              children: '80',
+            },
+            children: { className: 'feature6-text', children: 'in total prize pool' },
+          },
+          {
+            md: 8,
+            xs: 24,
+            className: 'feature6-number-wrapper',
             name: 'child0',
             number: {
               className: 'feature6-number',
-              unit: { className: 'feature6-unit', children: '万' },
+              unit: { className: 'feature6-unit', children: '' },
               toText: true,
-              children: '116',
+              children: '4',
             },
-            children: { className: 'feature6-text', children: '模型数据' },
+            children: { className: 'feature6-text', children: 'unique tracks' },
           },
           {
             md: 8,
@@ -242,30 +209,19 @@ export const Feature60DataSource = {
             name: 'child1',
             number: {
               className: 'feature6-number',
-              unit: { className: 'feature6-unit', children: '亿' },
+              unit: { className: 'feature6-unit', children: 'K' },
               toText: true,
-              children: '1.17',
+              children: '20',
             },
-            children: { className: 'feature6-text', children: '模型迭代数量' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            className: 'feature6-number-wrapper',
-            name: 'child2',
-            number: {
-              className: 'feature6-number',
-              unit: { className: 'feature6-unit', children: '亿' },
-              toText: true,
-              children: '2.10',
-            },
-            children: { className: 'feature6-text', children: '训练样本数量' },
+            children: { className: 'feature6-text', children: 'bounty for each track' },
           },
         ],
       },
     ],
   },
 };
+
+// Track Section
 export const Feature70DataSource = {
   wrapper: { className: 'home-page-wrapper feature7-wrapper' },
   page: { className: 'home-page feature7' },
@@ -278,17 +234,18 @@ export const Feature70DataSource = {
         className: 'feature7-title-h1',
         children: (
           <span>
-            <p>Tracks Option 1</p>
+            <p>Tracks</p>
           </span>
         ),
       },
       {
         name: 'content',
         className: 'feature7-title-content',
-        children: '你可以直接快速接入图像能力',
+        children: 'Blockchain-centric hackathon tracks',
       },
     ],
   },
+  // track 1
   blockWrapper: {
     className: 'feature7-block-wrapper',
     gutter: 24,
@@ -305,21 +262,22 @@ export const Feature70DataSource = {
               name: 'image',
               className: 'feature7-block-image',
               children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+                'https://img.icons8.com/nolan/344/00C6FF/0072FF/bonds.png',
             },
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: '身份证',
+              children: 'Defi Track',
             },
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
+              children: 'Asset Management Tool, DEX, Derivatives, Stablecoins, etc.',
             },
           ],
         },
       },
+      // track 2
       {
         md: 6,
         xs: 24,
@@ -332,21 +290,22 @@ export const Feature70DataSource = {
               name: 'image',
               className: 'feature7-block-image',
               children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+                'https://img.icons8.com/nolan/344/00C6FF/0072FF/image.png',
             },
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: '身份证',
+              children: 'NFT Track',
             },
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
+              children: 'Auction Mechanics, Fractionalization, etc.',
             },
           ],
         },
       },
+      // track 3
       {
         md: 6,
         xs: 24,
@@ -359,21 +318,22 @@ export const Feature70DataSource = {
               name: 'image',
               className: 'feature7-block-image',
               children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+                'https://img.icons8.com/nolan/344/00C6FF/0072FF/internet.png',
             },
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: '身份证',
+              children: 'Web3 Track',
             },
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
+              children: 'Communication layers, creative Social Fis, etc.',
             },
           ],
         },
       },
+      // track 4
       {
         md: 6,
         xs: 24,
@@ -386,125 +346,17 @@ export const Feature70DataSource = {
               name: 'image',
               className: 'feature7-block-image',
               children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+                'https://img.icons8.com/nolan/344/00C6FF/0072FF/controller.png',
             },
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: '身份证',
+              children: 'Gaming',
             },
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
-            },
-          ],
-        },
-      },
-      {
-        md: 6,
-        xs: 24,
-        name: 'block4',
-        className: 'feature7-block',
-        children: {
-          className: 'feature7-block-group',
-          children: [
-            {
-              name: 'image',
-              className: 'feature7-block-image',
-              children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-            },
-            {
-              name: 'title',
-              className: 'feature7-block-title',
-              children: '身份证',
-            },
-            {
-              name: 'content',
-              className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
-            },
-          ],
-        },
-      },
-      {
-        md: 6,
-        xs: 24,
-        name: 'block5',
-        className: 'feature7-block',
-        children: {
-          className: 'feature7-block-group',
-          children: [
-            {
-              name: 'image',
-              className: 'feature7-block-image',
-              children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-            },
-            {
-              name: 'title',
-              className: 'feature7-block-title',
-              children: '身份证',
-            },
-            {
-              name: 'content',
-              className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
-            },
-          ],
-        },
-      },
-      {
-        md: 6,
-        xs: 24,
-        name: 'block6',
-        className: 'feature7-block',
-        children: {
-          className: 'feature7-block-group',
-          children: [
-            {
-              name: 'image',
-              className: 'feature7-block-image',
-              children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-            },
-            {
-              name: 'title',
-              className: 'feature7-block-title',
-              children: '身份证',
-            },
-            {
-              name: 'content',
-              className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
-            },
-          ],
-        },
-      },
-      {
-        md: 6,
-        xs: 24,
-        name: 'block7',
-        className: 'feature7-block',
-        children: {
-          className: 'feature7-block-group',
-          children: [
-            {
-              name: 'image',
-              className: 'feature7-block-image',
-              children:
-                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-            },
-            {
-              name: 'title',
-              className: 'feature7-block-title',
-              children: '身份证',
-            },
-            {
-              name: 'content',
-              className: 'feature7-block-content',
-              children: '识别身份证正反面姓名、身份证号、发证机关等相关信息',
+              children: 'Mini-Games, Features allowing interoperability, etc',
             },
           ],
         },
@@ -512,6 +364,8 @@ export const Feature70DataSource = {
     ],
   },
 };
+
+// Sponsor Section
 export const Content120DataSource = {
   wrapper: { className: 'home-page-wrapper content12-wrapper' },
   page: { className: 'home-page content12' },
@@ -519,12 +373,12 @@ export const Content120DataSource = {
   titleWrapper: {
     className: 'title-wrapper',
     children: [
-      {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
-        className: 'title-image',
-      },
+      // {
+      //   name: 'image',
+      //   children:
+      //     'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
+      //   className: 'title-image',
+      // },
       {
         name: 'title',
         children: (
@@ -536,6 +390,7 @@ export const Content120DataSource = {
       },
     ],
   },
+  // Sponsor listing
   block: {
     className: 'img-wrapper',
     children: [
@@ -546,9 +401,10 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
+          url: "https://polygon.technology/",
           img: {
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/TFicUVisNHTOEeMYXuQF.svg',
+              'https://chainstack.com/wp-content/uploads/2021/12/Group-877-11.png',
           },
         },
       },
@@ -559,6 +415,7 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
+          url: "https://polygon.technology/",
           img: {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg',
@@ -572,9 +429,10 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
+          url: "https://www.terra.money/",
           img: {
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/bqyPRSZmhvrsfJrBvASi.svg',
+              'https://www.cryptocoinzone.com/wp-content/uploads/2021/10/Terra-LUNA-logo.png',
           },
         },
       },
@@ -585,6 +443,7 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
+          url: "https://polygon.technology/",
           img: {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg',
@@ -598,6 +457,7 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
+          url: "https://polygon.technology/",
           img: {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg',
@@ -611,15 +471,18 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
+          url: "https://solana.com/",
           img: {
             children:
-              'https://gw.alipayobjects.com/zos/rmsportal/ftBIiyJcCHpHEioRvPsV.svg',
+              'https://www.logosvgpng.com/wp-content/uploads/2021/12/solana-logo-vector.png',
           },
         },
       },
     ],
   },
 };
+
+// judges section
 export const Teams21DataSource = {
   wrapper: { className: 'home-page-wrapper teams2-wrapper' },
   page: { className: 'home-page teams2' },
@@ -631,7 +494,7 @@ export const Teams21DataSource = {
         name: 'title',
         children: (
           <span>
-            <p>Judges option 1</p>
+            <p>Judges and Speakers</p>
           </span>
         ),
       },
@@ -649,22 +512,26 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
+          url: "https://www.linkedin.com/in/boyuan-xu/",
           children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+            'https://media-exp1.licdn.com/dms/image/C5603AQH8AC2K_H0RHA/profile-displayphoto-shrink_800_800/0/1649179774475?e=1656547200&v=beta&t=rdpLvyTJYzQNVt1NVpTltyp_hexyLKg1YOvJ5vxal8A',
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
           children: [
-            { name: 'title', className: 'teams2-title', children: '叶秀英' },
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Jack Xu' },
             {
               name: 'content',
               className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
+              children: 'Judge and Speaker',
             },
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
+              children: 'Co-founder @ EthSign; Blockchain lecturer @ USC',
             },
           ],
         },
@@ -677,22 +544,26 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
+          url: "https://www.linkedin.com/in/mattytay/",
           children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
+            'https://media-exp1.licdn.com/dms/image/C5603AQH-81kfZyuG3Q/profile-displayphoto-shrink_800_800/0/1642727271855?e=1656547200&v=beta&t=eghXwlhRv6wqUPxLaWHKtnyNRyoA8ghT0PmfLcEhMjs',
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
           children: [
-            { name: 'title', className: 'teams2-title', children: '韩勇' },
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Matty Taylor' },
             {
               name: 'content',
               className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
+              children: 'Judge and Speaker',
             },
             {
               name: 'content1',
               className: 'teams2-content',
-              children: '语雀是一款优雅高效的在线文档编辑与协同工具。',
+              children: 'Head of Growth @Solana',
             },
           ],
         },
@@ -705,22 +576,26 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
+          url: "https://www.linkedin.com/in/zrosen/",
           children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+            'https://media-exp1.licdn.com/dms/image/C4D03AQEULXzQD6-69A/profile-displayphoto-shrink_800_800/0/1602826440728?e=1656547200&v=beta&t=gtBxPVWv7UqCCnn6sVwz9GmlRQSKM5DwywZmtXe6aLo',
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
           children: [
-            { name: 'title', className: 'teams2-title', children: '叶秀英' },
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Zack Rosen' },
             {
               name: 'content',
               className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
+              children: 'Judge and Speaker',
             },
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
+              children: 'Investor @ Ribbit Capital',
             },
           ],
         },
@@ -733,162 +608,26 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
+          url: "https://www.linkedin.com/in/cameron-dennis-b93b25104/",
           children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+            'https://media-exp1.licdn.com/dms/image/C5603AQEJx75_wNFGsQ/profile-displayphoto-shrink_800_800/0/1620738348612?e=1656547200&v=beta&t=C9HJ5J9Ni8yspFCtTzdU6tQ2RILEyh5dRAWdcsOB3ms',
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
           children: [
-            { name: 'title', className: 'teams2-title', children: '叶秀英' },
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Cameron Dennis' },
             {
               name: 'content',
               className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
+              children: 'Judge and Speaker',
             },
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block4',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams2-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams2-textWrapper',
-          children: [
-            { name: 'title', className: 'teams2-title', children: '韩勇' },
-            {
-              name: 'content',
-              className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams2-content',
-              children: '语雀是一款优雅高效的在线文档编辑与协同工具。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block5',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams2-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams2-textWrapper',
-          children: [
-            { name: 'title', className: 'teams2-title', children: '叶秀英' },
-            {
-              name: 'content',
-              className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams2-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block6',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams2-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams2-textWrapper',
-          children: [
-            { name: 'title', className: 'teams2-title', children: '叶秀英' },
-            {
-              name: 'content',
-              className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams2-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block7',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams2-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams2-textWrapper',
-          children: [
-            { name: 'title', className: 'teams2-title', children: '韩勇' },
-            {
-              name: 'content',
-              className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams2-content',
-              children: '语雀是一款优雅高效的在线文档编辑与协同工具。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block8',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams2-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams2-textWrapper',
-          children: [
-            { name: 'title', className: 'teams2-title', children: '叶秀英' },
-            {
-              name: 'content',
-              className: 'teams2-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams2-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
+              children: 'President and Founder of Blockchain Acceleration Founder',
             },
           ],
         },
@@ -896,6 +635,8 @@ export const Teams21DataSource = {
     ],
   },
 };
+
+// partners section
 export const Teams10DataSource = {
   wrapper: { className: 'home-page-wrapper teams1-wrapper' },
   page: { className: 'home-page teams1' },
@@ -926,20 +667,23 @@ export const Teams10DataSource = {
             {
               name: 'image',
               className: 'teams1-image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+              url: "https://www.nublockchaingroup.com/",
+              children: nu,
             },
-            { name: 'title', className: 'teams1-title', children: '叶秀英' },
+            { 
+              name: 'title', 
+              className: 'teams1-title', 
+              children: 'Northwestern Blockchain Group' },
             {
               name: 'content',
               className: 'teams1-job',
-              children: '公司+职位 信息暂缺',
+              children: 'Co-Organizer',
             },
             {
               name: 'content1',
               className: 'teams1-content',
               children:
-                'AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
+                'Northwestern University\'s Primier Blockchain Organization',
             },
           ],
         },
@@ -954,48 +698,23 @@ export const Teams10DataSource = {
             {
               name: 'image',
               className: 'teams1-image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
+              url: 'https://www.instagram.com/usc.cssa/?hl=en',
+              children: usc,
             },
-            { name: 'title', className: 'teams1-title', children: '韩勇' },
+            { 
+              name: 'title', 
+              className: 'teams1-title', 
+              children: 'USC CSSA' },
             {
               name: 'content',
               className: 'teams1-job',
-              children: '公司+职位 信息暂缺',
+              children: 'Co-Organizer',
             },
             {
               name: 'content1',
               className: 'teams1-content',
               children:
-                '语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业轻松拥有文档中心阿里巴巴集团内部使用多年，众多中小企业首选。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        titleWrapper: {
-          children: [
-            {
-              name: 'image',
-              className: 'teams1-image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-            },
-            { name: 'title', className: 'teams1-title', children: '叶秀英' },
-            {
-              name: 'content',
-              className: 'teams1-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams1-content',
-              children:
-                'AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
+                'USC Chinese Students and Scholars Association',
             },
           ],
         },
@@ -1003,6 +722,8 @@ export const Teams10DataSource = {
     ],
   },
 };
+
+// faq section
 export const Content30DataSource = {
   wrapper: { className: 'home-page-wrapper content3-wrapper' },
   page: { className: 'home-page content3' },
@@ -1014,9 +735,7 @@ export const Content30DataSource = {
         name: 'title',
         children: (
           <span>
-            <span>
-              <p>FAQ</p>
-            </span>
+            <p>Tracks Option 3</p>
           </span>
         ),
         className: 'title-h1',
@@ -1154,6 +873,8 @@ export const Content30DataSource = {
     ],
   },
 };
+
+// Footer section
 export const Footer20DataSource = {
   wrapper: { className: 'home-page-wrapper footer2-wrapper' },
   OverPack: { className: 'home-page footer2', playScale: 0.05 },
@@ -1162,13 +883,12 @@ export const Footer20DataSource = {
     children: [
       {
         name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/NuuAwJBxewWglRSoNjET.png',
+        children: logo,
         className: 'copyright-logo',
       },
       {
         name: 'group',
-        children: '蚂蚁金服体验科技大会',
+        children: 'Mega Hackathon 2022',
         className: 'copyright-group',
       },
       {
@@ -1179,7 +899,7 @@ export const Footer20DataSource = {
       },
       {
         name: 'copyright',
-        children: 'Copyright © 蚂蚁金融服务集团',
+        children: 'Copyright © Mega Hackathon 2022',
         className: 'copyright-text',
       },
     ],
@@ -1188,18 +908,236 @@ export const Footer20DataSource = {
     className: 'links',
     children: [
       {
-        name: 'weibo',
-        href: '#',
-        className: 'links-weibo',
+        name: 'linkedin',
+        href: 'https://www.linkedin.com/company/mega-hackathon-2022/about/',
+        className: 'links-linkedin',
         children:
-          'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjZweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjYgMjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ3LjEgKDQ1NDIyKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT53ZWlibzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9IjAuNCI+CiAgICAgICAgPGcgaWQ9IumhteiEmiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU2LjAwMDAwMCwgLTIxLjAwMDAwMCkiIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxnIGlkPSJ3ZWlibyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTYuMDAwMDAwLCAyMS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOS4wOTMyNDIyLDkuNDM5OTgwNzIgQzE5LjUwNzk3MjcsOC4zOTk3OTc1OSAxOS41NTA5NTksNy41MDI1NjYyNyAxOS4xMDExMzg3LDYuODYyNTcyMjkgQzE4LjI1Nzk5MjIsNS42NjIzNTkwNCAxNS45NTA2Njk5LDUuNzI2OTAyNDEgMTMuMzA1NzI4NSw2LjgzMDMxMzI1IEMxMy4zMDU3Mjg1LDYuODI4OTQ2OTkgMTIuNDc1MzAyNyw3LjE5MjQ3NDcgMTIuNjg3NTkzNyw2LjUzNTc1NjYzIEMxMy4wOTQ0MDIzLDUuMjMyNTY3NDcgMTMuMDMzMjg3MSw0LjE0MTI1MDYgMTIuNDAwMTIxMSwzLjUxMDg5NjM5IEMxMC45NjU0MjM4LDIuMDgwMTEzMjUgNy4xNDk3NzE0OCwzLjU2NTA2NjI3IDMuODc3MjUsNi44MjQ1NDQ1OCBDMS40MjcwMjkzLDkuMjY2NDkwMzYgMC4wMDQwODc4OTA2MiwxMS44NTQ2NzcxIDAuMDA0MDg3ODkwNjIsMTQuMDkyNzcxMSBDMC4wMDQwODc4OTA2MiwxOC4zNzM1ODMxIDUuNTEyOTkwMjMsMjAuOTc1OTYzOSAxMC45MDI1NTY2LDIwLjk3NTk2MzkgQzE3Ljk2NzIxODgsMjAuOTc1OTYzOSAyMi42NjY4OTY1LDE2Ljg4NTU0MzQgMjIuNjY2ODk2NSwxMy42MzgxODQzIEMyMi42NjY4OTY1LDExLjY3NjE3NzEgMjEuMDA4NTU4NiwxMC41NjI3OTc2IDE5LjUxODM1NzQsMTAuMTAyMDYyNyBDMTkuMTUyNjA1NSw5Ljk5MzExNTY2IDE4LjkwMTU2ODQsOS45MTgzNzU5IDE5LjA5MzIxNjgsOS40Mzk5ODA3MiBMMTkuMDkzMjQyMiw5LjQzOTk4MDcyIFogTTIuNjI0NzU1ODYsMTUuMTE0MTMwMSBDMi4zNDU1NjA1NSwxMi4zMDA5Mzk4IDUuNjA2NTI5Myw5LjY3NzI1NTQyIDkuOTA2MzMwMDgsOS4yNTM4MTQ0NiBDMTQuMjA3MDk1Nyw4LjgyOTU4OTE2IDE3LjkxOTQzMzYsMTAuNzY3MDI4OSAxOC4xOTg2MDM1LDEzLjU3OTQwOTYgQzE4LjQ3NzIxNDgsMTYuMzkzNzEzMyAxNS4yMTc2MTcyLDE5LjAxODE4MTkgMTAuOTE2ODI2MiwxOS40NDE4MjUzIEM2LjYxNjY2OTkyLDE5Ljg2NDMwNDggMi45MDQzMDY2NCwxNy45Mjc4NTE4IDIuNjI0NzU1ODYsMTUuMTE0MTMwMSBaIE0xMS4zNDY3OTEsMTEuNDE4OTE0NSBDOS4zMDAzMzIwMywxMC44ODgwNjk5IDYuOTg3MjIwNywxMS45MDQ0NDQ2IDYuMDk4MzcxMDksMTMuNzAxNDEyIEM1LjE5MzE0NDUzLDE1LjUzMzkyNzcgNi4wNjg0ODYzMywxNy41NjgxOTUyIDguMTM1NzkxMDIsMTguMjMzMzM4NiBDMTAuMjc3NjkzNCwxOC45MjEzNTQyIDEyLjgwMTcyNDYsMTcuODY2NzQ5NCAxMy42Nzk3ODMyLDE1Ljg4ODk3OTUgQzE0LjU0NTI5ODgsMTMuOTU1MjA4NCAxMy40NjQ0MTk5LDExLjk2NDE4MDcgMTEuMzQ2NzkxLDExLjQxODkxNDUgWiBNOS43ODM4OTY0OCwxNi4wOTg5Nzk1IEM5LjM2Nzk5ODA1LDE2Ljc2MDEgOC40NzcyNDQxNCwxNy4wNDk4MjQxIDcuODA2MDY4MzYsMTYuNzQ0NzE2OSBDNy4xNDQ5NDcyNywxNi40NDQ5OTg4IDYuOTUwMDIzNDQsMTUuNjc2NSA3LjM2NjA5OTYxLDE1LjAzMTY5ODggQzcuNzc2OTcwNywxNC4zODk4MDcyIDguNjM3NjYyMTEsMTQuMTAzMzQ3IDkuMzAzODEwNTUsMTQuMzgxNzEwOCBDOS45NzcyOTY4NywxNC42Njc4MTY5IDEwLjE5MjY2MDIsMTUuNDMwNzQ5NCA5Ljc4Mzg5NjQ4LDE2LjA5ODk3OTUgWiBNMTEuMTU0MTc3NywxNC4zNDYxODggQzExLjAwMzc4OTEsMTQuNjAyODY4NyAxMC42NzExOTczLDE0LjcyNTgzMjUgMTAuNDEwOTE4LDE0LjYxOTAxMDggQzEwLjE1NDQ3MjcsMTQuNTE0MTEyIDEwLjA3NDI2MzcsMTQuMjI3NDQ5NCAxMC4yMTk4MjgxLDEzLjk3NTM3MzUgQzEwLjM2OTgzNTksMTMuNzI0ODQxIDEwLjY4OTUyOTMsMTMuNjAyNjYxNCAxMC45NDQ5ODQ0LDEzLjcwMzMzNDkgQzExLjIwNDcwNTEsMTMuNzk4MjE0NSAxMS4yOTc4Mzc5LDE0LjA4ODM0MzQgMTEuMTU0MjAzMSwxNC4zNDYxODggTDExLjE1NDE3NzcsMTQuMzQ2MTg4IFogTTI0LjIwOTc4MzIsMi4yNjg0MDQ4MiBDMjUuOTE2ODk2NSw0LjE1MTI2OTg4IDI2LjM3Njc0NjEsNi43MTgxMDI0MSAyNS42NDgzMTQ1LDguOTcwNjE4MDcgQzI1LjY0ODEzNjcsOC45NzE3ODE5MyAyNS42NDgxMzY3LDguOTczNjc5NTIgMjUuNjQ4MTM2Nyw4Ljk3NDQ2Mzg2IEMyNS40Nzg4MzIsOS40OTQzNTMwMSAyNC45MTgxNTYyLDkuNzc5NDcyMjkgMjQuMzk2MDIzNCw5LjYxMDk5MTU3IEMyMy44NzE5NjA5LDkuNDQyNDg1NTQgMjMuNTg1ODU5NCw4Ljg4NDc0NTc4IDIzLjc1NTEzODcsOC4zNjI5MDg0MyBMMjMuNzU0OTM1NSw4LjM2MjMyNjUxIEMyNC4yNzM3OTMsNi43NjE3MjE2OSAyMy45NDQ4NTc0LDQuOTM1MzI4OTIgMjIuNzMzMjY3NiwzLjU5Njc2ODY3IEMyMS41MTk3MjI3LDIuMjU4MjA4NDMgMTkuNzMxNjM4NywxLjc0NjM5MDM2IDE4LjA3OTA2NDUsMi4wOTU4NzU5IEMxNy41NDE3MjI3LDIuMjEwNTY2MjcgMTcuMDEzMDM5MSwxLjg2ODM5Mjc3IDE2Ljg5ODkwODIsMS4zMzM1IEMxNi43ODMzODA5LDAuNzk4ODA5NjM5IDE3LjEyNjQwODIsMC4yNzE2MDg0MzQgMTcuNjYzMzY5MSwwLjE1NzUgTDE3LjY2NDEzMDksMC4xNTc1IEMxOS45ODcyOTY5LC0wLjMzNDU1NzgzMSAyMi41MDQwMTU2LDAuMzgzNjE2ODY3IDI0LjIwOTc4MzIsMi4yNjgzNzk1MiBMMjQuMjA5NzgzMiwyLjI2ODQwNDgyIFogTTIxLjU4OTUyMTUsNC42MjQ0NTMwMSBMMjEuNTg5NTIxNSw0LjYyNDI3NTkgQzIyLjQyMTg3Nyw1LjU0MjI3OTUyIDIyLjY0NDE3MTksNi43OTE4ODA3MiAyMi4yODg0NDkyLDcuODg5NyBDMjIuMTQzMjY1Niw4LjMzODEzODU1IDIxLjY2MDg2OTEsOC41ODI5MDI0MSAyMS4yMTA0NjQ4LDguNDM5MzY4NjcgQzIwLjc2MDQ0MTQsOC4yOTM3MzQ5NCAyMC41MTQ0MzE2LDcuODEyNDU1NDIgMjAuNjU5NDEyMSw3LjM2NDgyNjUxIEwyMC42NTg4MjgxLDcuMzY0ODI2NTEgQzIwLjgzMzcxODgsNi44MjgxODc5NSAyMC43MjQyMDksNi4yMTY0NTU0MiAyMC4zMTc5NTksNS43NjcyNTc4MyBDMTkuOTExNTA1OSw1LjMxOTYwMzYxIDE5LjMxMTcwMzEsNS4xNDk3NTY2MyAxOC43NTg1MTc2LDUuMjY2NTQ2OTkgTDE4Ljc1ODUxNzYsNS4yNjU2MTA4NCBDMTguMjk3MTQ0NSw1LjM2NTkwNDgyIDE3Ljg0MjI5NjksNS4wNzA0MTIwNSAxNy43NDMxOTczLDQuNjExMjIwNDggQzE3LjY0MzkxOTksNC4xNDk3MjY1MSAxNy45Mzg3MDUxLDMuNjk1OTI0MSAxOC40MDE0NDkyLDMuNTk3NzMwMTIgQzE5LjUzMzQxNDEsMy4zNTc5NTA2IDIwLjc1OTI5ODgsMy43MDY4NTQyMiAyMS41ODk1MjE1LDQuNjI0NDUzMDEgTDIxLjU4OTUyMTUsNC42MjQ0NTMwMSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+',
+          'https://img.icons8.com/nolan/344/E6E6E6/808080/linkedin.png',
       },
       {
-        name: 'zhihu',
-        href: '#',
-        className: 'links-zhihu',
+        name: 'instagram',
+        href: 'https://twitter.com/MegaHack11',
+        className: 'links-instagram',
         children:
-          'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjFweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjEgMjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ3LjEgKDQ1NDIyKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT7nn6XkuY48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIwLjQiPgogICAgICAgIDxnIGlkPSLpobXohJoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTQuMDAwMDAwLCAtMjEuMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSIjRkZGRkZGIj4KICAgICAgICAgICAgPGcgaWQ9IuefpeS5jiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE0LjAwMDAwMCwgMjEuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNi43Nzg1ODQ2MSwxMS43MjI5IEwxMS4yOTA5Nzg1LDExLjcyMjkgQzExLjI5MDk3ODUsMTAuNjQ0OSAxMC43OTEyODYyLDEwLjAxMzUgMTAuNzkxMjg2MiwxMC4wMTM1IEw2Ljg3NDM4NzcsMTAuMDEzNSBDNi45Njc0MzM4NSw4LjA2MTE5OTk5IDcuMDUwODMwNzcsNS41NTU4OTk5OSA3LjA4MTE1NjkzLDQuNjI0ODk5OTkgTDEwLjgwNjQ0OTIsNC42MjQ4OTk5OSBDMTAuODA2NDQ5Miw0LjYyNDg5OTk5IDEwLjc4NTc3MjMsMy4wMjQgMTAuMzcyMjMzOCwzLjAyNCBMMy44MjI0NzM4NSwzLjAyNCBDMy44MjI0NzM4NSwzLjAyNCA0LjIxNjcxMzg0LDAuOTMwMyA0Ljc0MTkwNzY5LDAuMDA1NjAwMDA2ODQgQzQuNzQxOTA3NjksMC4wMDU2MDAwMDY4NCAyLjc4NjU1OTk5LC0wLjEwMTQ5OTk5MyAyLjExOTM4NDYyLDIuNTQ2NjAwMDEgQzEuNDUyMjA5MjQsNS4xOTQ3MDAwMSAwLjQ1MjEzNTM5MSw2Ljc5NTYgMC4zNDY2ODMwODQsNy4wODgxOTk5OSBDMC4yNDA1NDE1NTIsNy4zODA3OTk5OSAwLjkyMjE5MDc2OSw3LjIyNjc5OTk5IDEuMjEwMjg5MjIsNy4wODgxOTk5OSBDMS40OTgzODc2OCw2Ljk0OTU5OTk5IDIuODAyNDEyMyw2LjQ3MjIgMy4xODE0ODkyNCw0LjYyNDg5OTk5IEw1LjIwNTc2MDAxLDQuNjI0ODk5OTkgQzUuMjMzMzI5MjMsNS43OTYgNS4zMTMyODAwMSw5LjM4NDE5OTk5IDUuMjg4NDY3NywxMC4wMTM1IEwxLjExOTMxMDc2LDEwLjAxMzUgQzAuNTI3OTUwNzYzLDEwLjQ0NDcgMC4zMzE1MTk5OTMsMTEuNzIyOSAwLjMzMTUxOTk5MywxMS43MjI5IEw1LjA5NjE3MjMxLDExLjcyMjkgQzQuODk2OTg0NjMsMTMuMDU5MiA0LjU0ODIzMzg1LDE0Ljc4MTkgNC4wNjAyNTg0NywxNS42OTQ3IEMzLjI4NzYzMDc3LDE3LjE0MyAyLjg3ODIyNzY5LDE4LjQ2NjcgMC4wODk1OTk5OTMzLDIwLjc0NDUgQzAuMDg5NTk5OTkzMywyMC43NDQ1IC0wLjM2NTI5MjMxNCwyMS4wODMzIDEuMDQ0MTg0NjIsMjAuOTYwMSBDMi40NTQzNTA3NywyMC44MzY5IDMuNzg4MDEyMzEsMjAuNDY3MyA0LjcxMjk1OTk5LDE4LjU4OTIgQzUuMjU1MTIxMjcsMTcuNDY5MTYwNiA1LjcxMTU5MTYsMTYuMzA4Mzk4NyA2LjA3ODMyNjE2LDE1LjExNzIgTDYuMDc2OTQ3NjksMTUuMTIyMSBMMTAuMDAzNDk1NCwxOS43MTM0IEMxMC4wMDM0OTU0LDE5LjcxMzQgMTAuNTE5MDQsMTguNDgxNCAxMC4xMzk5NjMxLDE3LjEyNjkgTDcuMjI5MzQxNTMsMTMuODE1OSBMNi4yNDM3NDE1NSwxNC41NTY1IEw2LjI0MzA1MjMsMTQuNTYgQzYuNTE2Njc2OTEsMTMuNTg1NiA2LjcxMzEwNzY4LDEyLjYyMjQgNi43NzQ0NDkyMiwxMS43ODQ1IEw2Ljc3OTI3Mzg1LDExLjcyMjkgTDYuNzc4NTg0NjEsMTEuNzIyOSBaIE0xMi4yMzEwODkyLDIuNjg1MjAwMDEgTDEyLjIzMTA4OTIsMTguNTczOCBMMTMuODc1NTkzOSwxOC41NzM4IEwxNC41NDk2NjE1LDIwLjQ4NjkgTDE3LjQwMDMyLDE4LjU3MzggTDIwLjk5MzI4LDE4LjU3MzggTDIwLjk5MzI4LDIuNjg1MjAwMDEgTDEyLjIzMTA4OTIsMi42ODUyMDAwMSBaIE0xOS4zMDA1MjkyLDE2Ljg2NTEgTDE3LjQzMjcxMzgsMTYuODY1MSBMMTUuMTAzODAzMSwxOC40Mjc1IEwxNC41NTMxMDc3LDE2Ljg2NTEgTDEzLjk3MjA4NjEsMTYuODY1MSBMMTMuOTcyMDg2MSw0LjQ1ODMgTDE5LjI5OTg0LDQuNDU4MyBMMTkuMjk5ODQsMTYuODY1MSBMMTkuMzAwNTI5MiwxNi44NjUxIFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=',
+          'https://img.icons8.com/nolan/344/E6E6E6/808080/twitter.png',
+      },
+      {
+        name: 'email',
+        href: 'maito:wagmi.megahack@gmail.com',
+        className: 'links-email',
+        children:
+          'https://img.icons8.com/nolan/344/E6E6E6/808080/new-post.png'
+        },
+    ],
+  },
+};
+
+
+
+export const Teams30DataSource = {
+  wrapper: { className: 'home-page-wrapper teams3-wrapper' },
+  page: { className: 'home-page teams3' },
+  OverPack: { playScale: 0.3, className: '' },
+  titleWrapper: {
+    className: 'title-wrapper',
+    children: [
+      {
+        name: 'title',
+        children: (
+          <span>
+            <p>Partners</p>
+          </span>
+        ),
+      },
+    ],
+  },
+  blockTop: {
+    className: 'block-top-wrapper',
+    children: [
+      {
+        name: 'block0',
+        className: 'block-top',
+        md: 8,
+        xs: 24,
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams3-top-image',
+              children:
+                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+            },
+            {
+              name: 'title',
+              className: 'teams3-top-title',
+              children: 'NU Blockchain Group',
+            },
+            {
+              name: 'content',
+              className: 'teams3-top-job',
+              children: 'Co-Organizer',
+            },
+            {
+              name: 'content1',
+              className: 'teams3-top-content',
+              children:
+                'Northwestern University Primier Blockchain Group',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block-top',
+        md: 8,
+        xs: 24,
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams3-top-image',
+              children:
+                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
+            },
+            { 
+              name: 'title', 
+              className: 'teams3-top-title', 
+              children: 'USC CSSA' },
+            {
+              name: 'content',
+              className: 'teams3-top-job',
+              children: 'Co-Organizer',
+            },
+            {
+              name: 'content1',
+              className: 'teams3-top-content',
+              children:
+                'USC China Association?',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block-top',
+        md: 8,
+        xs: 24,
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams3-top-image',
+              children:
+                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+            },
+            {
+              name: 'title',
+              className: 'teams3-top-title',
+              children: '叶秀英',
+            },
+            {
+              name: 'content',
+              className: 'teams3-top-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content1',
+              className: 'teams3-top-content',
+              children:
+                'AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
+            },
+          ],
+        },
+      },
+    ],
+  },
+  block: {
+    className: 'block-wrapper',
+    gutter: 72,
+    children: [
+      {
+        name: 'block0',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams3-image',
+          children:
+            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+        },
+        titleWrapper: {
+          className: 'teams3-textWrapper',
+          children: [
+            { name: 'title', className: 'teams3-title', children: '叶秀英' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content1',
+              className: 'teams3-content',
+              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams3-image',
+          children:
+            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
+        },
+        titleWrapper: {
+          className: 'teams3-textWrapper',
+          children: [
+            { name: 'title', className: 'teams3-title', children: '韩勇' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content1',
+              className: 'teams3-content',
+              children: '语雀是一款优雅高效的在线文档编辑与协同工具。',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams3-image',
+          children:
+            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
+        },
+        titleWrapper: {
+          className: 'teams3-textWrapper',
+          children: [
+            { name: 'title', className: 'teams3-title', children: '叶秀英' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content1',
+              className: 'teams3-content',
+              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
+            },
+          ],
+        },
       },
     ],
   },

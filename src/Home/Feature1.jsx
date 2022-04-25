@@ -51,8 +51,8 @@ function Content1(props) {
           {...dataSource.textWrapper}
           component={Col}
           componentProps={{
-            md: dataSource.textWrapper.md,
-            xs: dataSource.textWrapper.xs,
+            md: dataSource.text1Wrapper.md,
+            xs: dataSource.text1Wrapper.xs,
           }}
         >
           <h2 key="h1" {...dataSource.title}>
