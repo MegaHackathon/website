@@ -21,13 +21,11 @@ class Footer2 extends React.PureComponent {
               );
             })}
           </TweenOne>
-          <a href={dataSource.copyright.href} style={{color:"#fafafa",}}>
             <TweenOne
               animation={{ x: '+=30', opacity: 0, type: 'from' }}
               key="copyright"
               {...dataSource.copyright}
             >
-              
               {dataSource.copyright.children.map((item, i) =>
                 React.createElement(
                   item.name.indexOf('title') === 0 ? 'h1' : 'div',
@@ -41,7 +39,6 @@ class Footer2 extends React.PureComponent {
                 )
               )}
             </TweenOne>
-          </a>
         </OverPack>
       </div>
     );
