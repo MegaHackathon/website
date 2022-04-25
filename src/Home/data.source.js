@@ -77,7 +77,7 @@ export const Nav00DataSource = {
         name: 'item3',
         className: 'header0-item',
         children: {
-          href: '#Teams3_0',
+          href: '#Content3_0',
           children: [
             {
               children: (
@@ -735,7 +735,7 @@ export const Content30DataSource = {
         name: 'title',
         children: (
           <span>
-            <p>Tracks Option 3</p>
+            <p>FAQ</p>
           </span>
         ),
         className: 'title-h1',
@@ -743,7 +743,7 @@ export const Content30DataSource = {
       {
         name: 'content',
         className: 'title-content',
-        children: '基于阿里云强大的基础资源',
+        children: 'Frequently Asked Questions and Contact Information', 
       },
     ],
   },
