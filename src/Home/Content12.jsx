@@ -11,7 +11,13 @@ class Content12 extends React.PureComponent {
         <Col key={item.name} {...item}>
           <div {...item.children.wrapper}>
             <span {...item.children.img}>
-              <img src={item.children.img.children} alt="img" />
+              <a href={item.children.url}>
+                <img 
+                  src={item.children.img.children} 
+                  alt="img" 
+                  height="64px"
+                />
+              </a> 
             </span>
           </div>
         </Col>
