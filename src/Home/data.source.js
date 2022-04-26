@@ -676,7 +676,7 @@ export const Teams10DataSource = {
             { 
               name: 'title', 
               className: 'teams1-title', 
-              children: 'Northwestern Blockchain Group' },
+              children: 'NU Blockchain Group' },
             {
               name: 'content',
               className: 'teams1-job',
