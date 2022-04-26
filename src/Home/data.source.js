@@ -317,7 +317,7 @@ export const Feature70DataSource = {
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: 'Defi Track',
+              children: 'DeFi',
             },
             {
               name: 'content',
@@ -345,7 +345,7 @@ export const Feature70DataSource = {
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: 'NFT Track',
+              children: 'NFT',
             },
             {
               name: 'content',
@@ -373,7 +373,7 @@ export const Feature70DataSource = {
             {
               name: 'title',
               className: 'feature7-block-title',
-              children: 'Web3 Track',
+              children: 'Web3',
             },
             {
               name: 'content',
@@ -406,7 +406,7 @@ export const Feature70DataSource = {
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: 'Mini-Games, Features allowing interoperability, etc',
+              children: 'Mini-Games, GameFi, Game interoperability, etc',
             },
           ],
         },
