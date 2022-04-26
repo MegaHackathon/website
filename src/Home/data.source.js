@@ -697,7 +697,7 @@ export const Teams10DataSource = {
         md: 8,
         xs: 24,
         titleWrapper: {
-          url: 'https://www.instagram.com/usc.cssa/?hl=en',
+          url: 'https://www.instagram.com/usc.cssa.official/?hl=en',
           children: [
             {
               name: 'image',
