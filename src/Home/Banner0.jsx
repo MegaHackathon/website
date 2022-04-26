@@ -77,11 +77,22 @@ export default Banner;
 
     .05vw 0vw .125vw #e1e1e1, .1vw 0vw .125vw #e1e1e1, .2vw 0vw .0625vw #e1e1e1, 
 
-    .05vw 0vw   0vw #979797, .1vw 0vw   0vw #979797, .2vw 0vw   0vw #979797,
-    .05vw 0vw  .05vw #979797, .1vw 0vw  0.05vw #979797, .2vw 0vw  .05vw #979797,
-    .05vw 0vw   1vw #979797, .1vw 0vw   1vw #979797, .2vw 0vw   1vw #979797, 
+    .05vw 0vw   0vw #cccccc, .1vw 0vw   0vw #cccccc, .2vw 0vw   0vw #cccccc,
+    .05vw 0vw  .05vw #cccccc, .1vw 0vw  0.05vw #cccccc, .2vw 0vw  .05vw #cccccc,
+    .05vw 0vw   1vw #cccccc, .1vw 0vw   1vw #cccccc, .2vw 0vw   1vw #cccccc, 
 
-    .05vw 0vw   0.5vw #0b0b0b, .1vw 0vw   0.5vw #0b0b0b, .2vw 0vw   2.5vw #0b0b0b, 
-    .05vw 0vw   2.5vw #0b0b0b, .1vw 0vw  10vw #0b0b0b, .2vw 0vw  5vw #0b0b0b,
-    .05vw 0vw  5vw #0b0b0b, .1vw 0vw  15vw #0b0b0b, .2vw 0vw  5vw #0b0b0b;  
+    .05vw 0vw   0.5vw #6b6b6b, .1vw 0vw   0.5vw #6b6b6b, .2vw 0vw   2.5vw #6b6b6b, 
+    .05vw 0vw   2.5vw #6b6b6b, .1vw 0vw  10vw #6b6b6b, .2vw 0vw  5vw #6b6b6b,
+    .05vw 0vw  5vw #6b6b6b, .1vw 0vw  15vw #6b6b6b, .2vw 0vw  5vw #6b6b6b;  
+
+    
+    .05vw 0vw .125vw #e6feff, .1vw 0vw .125vw #e6feff, .2vw 0vw .0625vw #e6feff, 
+
+    .05vw 0vw   0vw #79ecf2, .1vw 0vw   0vw #79ecf2, .2vw 0vw   0vw #79ecf2,
+    .05vw 0vw  .05vw #79ecf2, .1vw 0vw  0.05vw #79ecf2, .2vw 0vw  .05vw #79ecf2,
+    .05vw 0vw   1vw #79ecf2, .1vw 0vw   1vw #79ecf2, .2vw 0vw   1vw #79ecf2, 
+
+    .05vw 0vw   0.5vw #1ecfd9, .1vw 0vw   0.5vw #1ecfd9, .2vw 0vw   2.5vw #1ecfd9, 
+    .05vw 0vw   2.5vw #1ecfd9, .1vw 0vw  10vw #1ecfd9, .2vw 0vw  5vw #1ecfd9,
+    .05vw 0vw  5vw #1ecfd9, .1vw 0vw  15vw #1ecfd9, .2vw 0vw  5vw #1ecfd9;
     */

@@ -1,6 +1,6 @@
 import React from 'react';
 import nu from './images/partners/nublockchain.png';
-import usc from './images/partners/usc_cssa.jpg';
+import usc from './images/partners/usc_cssa.PNG';
 
 import logo from './images/mega_logo.PNG';
 
