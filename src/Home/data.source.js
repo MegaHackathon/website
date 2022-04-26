@@ -132,16 +132,31 @@ export const Banner01DataSource = {
   textWrapper: { className: 'banner0-text-wrapper' },
   title: {
     className: 'banner0-title',
-    children: 'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+    // children: 'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+    children: 'MEGA HACKATHON',
+  },
+  neonWrapper: {
+    className: 'banner0-neon-wrapper',
+  },
+  neonText: {
+    className: 'banner0-neon-text',
+  },
+  smallNeonText: {
+    className: 'banner0-small-neon-text',
   },
   content: {
     className: 'banner0-content',
-    children: 'June 15th - July 8th, 2022',
+    children: 'JUNE 15 - JULY 8, 2022',
   },
-  button: { 
+  button1: { 
+    className: 'banner0-button', 
+    href: 'ttps://discord.gg/JptHtVxJUk',
+    children: 'Apply to Hack' 
+  },
+  button2: { 
     className: 'banner0-button', 
     href: 'mailto:wagmi.megahack@gmail.com',
-    children: 'Learn More' 
+    children: 'Sponsor Event' 
   },
 };
 
@@ -913,7 +928,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              'All you need is to fill our form on Dorahacks and join Discord, we will guide you through everything there',
+              'All you need is to fill our form on Dorahacks and join Discord (links below), we will guide you through everything there',
           },
         },
       },
@@ -936,7 +951,7 @@ export const Content30DataSource = {
           content: {
             className: 'content3-content',
             children:
-              'Join the discord channel and Reach us directly at wagmi.megahack@gmail.com. We would happy to help you.',
+              'Join the Discord (link below) and Reach us directly at wagmi.megahack@gmail.com. We would happy to help you.',
           },
         },
       },

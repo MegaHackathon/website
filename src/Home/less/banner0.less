@@ -19,14 +19,14 @@
     right: 0;
     font-size: 14px;
     color: @template-text-color-light;
-    width: 550px;
+    width: 850px;
     >.queue-anim-leaving {
       position: relative !important;
     }
   }
   & &-title {
-    width: 350px;
-    left: 30px;
+    width: 75%;
+    // left: 30px;
     min-height: 60px;
     margin: auto;
     display: inline-block;
@@ -39,22 +39,24 @@
     min-height: 24px;
   }
   & &-button {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 3px solid #eee;
+    color: #eee;
     background: transparent;
     box-shadow: 0 0 0 transparent;
-    font-size: 16px;
-    height: 40px;
+    font-size: 1.5em;
+    height: 2em;
+    margin: 10px 30px;
+    border-radius: 1em;
     transition: background .45s @ease-out, box-shadow .45s @ease-out;
     &:hover {
-      color: #fff;
-      border-color: #fff;
+      color: #eee;
+      border-color: #eee;
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
     }
     &:focus {
-      color: #fff;
-      border-color: #fff;
+      color: #eee;
+      border-color: #eee;
     }
     &.queue-anim-leaving {
       width: auto;
@@ -67,6 +69,43 @@
     left: 50%;
     margin-left: -12px;
     color: @template-text-color-light;
+  }
+  @font-face {
+    font-family: neon;
+    src: url(hellodenverdisplayregular_v1.6.ttf);
+  }
+  & &-neon-wrapper {
+    background-size: auto 100%;
+  }
+  & &-neon-text{
+    font-family:neon;
+    font-size: 8rem;
+    color: #eeeeee;
+    text-shadow: 
+    .05vw 0vw .125vw #e1e1e1, .1vw 0vw .125vw #e1e1e1, .2vw 0vw .0625vw #e1e1e1, 
+
+    .05vw 0vw   0vw #979797, .1vw 0vw   0vw #979797, .2vw 0vw   0vw #979797,
+    .05vw 0vw  .05vw #979797, .1vw 0vw  0.05vw #979797, .2vw 0vw  .05vw #979797,
+    .05vw 0vw   1vw #979797, .1vw 0vw   1vw #979797, .2vw 0vw   1vw #979797, 
+
+    .05vw 0vw   0.5vw #0b0b0b, .1vw 0vw   0.5vw #0b0b0b, .2vw 0vw   2.5vw #0b0b0b, 
+    .05vw 0vw   2.5vw #0b0b0b, .1vw 0vw  10vw #0b0b0b, .2vw 0vw  5vw #0b0b0b,
+    .05vw 0vw  5vw #0b0b0b, .1vw 0vw  15vw #0b0b0b, .2vw 0vw  5vw #0b0b0b;
+  }
+  & &-small-neon-text{
+    font-family:neon;
+    font-size: 3rem;
+    color: #eeeeee;
+    text-shadow: 
+    .025vw 0vw .0625vw #e1e1e1, .05vw 0vw .0625vw #e1e1e1, .1vw 0vw .03125vw #e1e1e1, 
+
+    .025vw 0vw   0vw #979797, .05vw 0vw   0vw #979797, .1vw 0vw   0vw #979797,
+    .025vw 0vw  .025vw #979797, .05vw 0vw  0.025vw #979797, .1vw 0vw  .025vw #979797,
+    .025vw 0vw   .5vw #979797, .05vw 0vw   .5vw #979797, .1vw 0vw   .5vw #979797, 
+
+    .025vw 0vw   0.25vw #0b0b0b, .05vw 0vw   0.25vw #0b0b0b, .1vw 0vw   1.25vw #0b0b0b, 
+    .025vw 0vw   1.25vw #0b0b0b, .05vw 0vw  5vw #0b0b0b, .1vw 0vw  2.5vw #0b0b0b,
+    .025vw 0vw  2.5vw #0b0b0b, .05vw 0vw  7.5vw #0b0b0b, .1vw 0vw  2.5vw #0b0b0b;
   }
 }
 
