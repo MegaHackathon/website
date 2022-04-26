@@ -10,7 +10,9 @@ class Teams1 extends React.PureComponent {
       const { titleWrapper, ...$item } = item;
       return (
         <Col key={i.toString()} {...$item}>
-          {titleWrapper.children.map(getChildrenToRender)}
+          <a href={titleWrapper.url}>
+            {titleWrapper.children.map(getChildrenToRender)}
+          </a>
         </Col>
       );
     });

@@ -1,13 +1,13 @@
-@teams2: teams2;
+@teams9: teams9;
 
-.@{teams2}-wrapper {
-  min-height: 446px;
+.@{teams9}-wrapper {
+  min-height: 334px; // 446px;
   overflow: hidden;
 
-  .@{teams2} {
+  .@{teams9} {
     overflow: hidden;
     height: 100%;
-    padding: 0px 24px 48px ;
+    padding: 0px 24px;
 
     >.title-wrapper {
       margin: 0 auto 48px;
@@ -18,7 +18,7 @@
       height: 100%;
       overflow: hidden;
       padding: 20px 0;
-      min-height: 456px;
+      min-height: 152px;
 
       .block {
         margin-bottom: 48px;
@@ -36,10 +36,6 @@
 
       img {
         width: 100%;
-      }
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 16px fade(#000, 12);
       }
     }
 
@@ -65,10 +61,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{teams2}-wrapper {
+  .@{teams9}-wrapper {
     min-height: 1440px;
 
-    .@{teams2}.home-page {
+    .@{teams9}.home-page {
       padding-bottom: 0;
     }
   }

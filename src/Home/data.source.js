@@ -1,11 +1,20 @@
 import React from 'react';
 import nu from './images/partners/nublockchain.png';
 import usc from './images/partners/usc_cssa.jpg';
+
 import logo from './images/mega_logo.PNG';
+
 import jackxu from './images/speakers/jackxu_icon.jpg';
 import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
 import zackrosen from './images/speakers/zackrosen_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
+
+import solana from './images/sponsors/solana.svg';
+import serum from './images/sponsors/serum.svg';
+
+import tsinghua from './images/partners/Tsinghua.svg';
+import uchicago from './images/partners/uchicago.jpg';
+import usc_bc from './images/partners/usc_blockchain.svg';
 
 
 // Nav bar
@@ -49,7 +58,7 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>Tracks & Prizes</p>
+                  <p>Prizes</p>
                 </span>
               ),
               name: 'text',
@@ -68,7 +77,7 @@ export const Nav00DataSource = {
                 <span>
                   <span>
                     <span>
-                      <p>Sponsors & Speakers</p>
+                      <p>Sponsors</p>
                     </span>
                   </span>
                 </span>
@@ -80,6 +89,23 @@ export const Nav00DataSource = {
       },
       {
         name: 'item3',
+        className: 'header0-item',
+        children: {
+          href: '#Teams1_0',
+          children: [
+            {
+              children: (
+                <span>
+                  <p>Team</p>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
+        },
+      },
+      {
+        name: 'item4',
         className: 'header0-item',
         children: {
           href: '#Content3_0',
@@ -112,7 +138,11 @@ export const Banner01DataSource = {
     className: 'banner0-content',
     children: 'June 15th - July 8th, 2022',
   },
-  button: { className: 'banner0-button', children: 'Learn More' },
+  button: { 
+    className: 'banner0-button', 
+    href: 'mailto:wagmi.megahack@gmail.com',
+    children: 'Learn More' 
+  },
 };
 
 // About Section
@@ -406,10 +436,9 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
-          url: "https://polygon.technology/",
+          url: "https://solana.com/",
           img: {
-            children:
-              'https://chainstack.com/wp-content/uploads/2021/12/Group-877-11.png',
+            children: solana,
           },
         },
       },
@@ -420,69 +449,26 @@ export const Content120DataSource = {
         xs: 24,
         children: {
           wrapper: { className: 'block-content' },
-          url: "https://polygon.technology/",
+          url: "https://www.projectserum.com/",
           img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/hkLGkrlCEkGZeMQlnEkD.svg',
+            children: serum,
           },
         },
       },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          url: "https://www.terra.money/",
-          img: {
-            children:
-              'https://www.cryptocoinzone.com/wp-content/uploads/2021/10/Terra-LUNA-logo.png',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          url: "https://polygon.technology/",
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/UcsyszzOabdCYDkoPPnM.svg',
-          },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          url: "https://polygon.technology/",
-          img: {
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/kRBeaICGexAmVjqBEqgw.svg',
-          },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          url: "https://solana.com/",
-          img: {
-            children:
-              'https://www.logosvgpng.com/wp-content/uploads/2021/12/solana-logo-vector.png',
-          },
-        },
-      },
+      // {
+      //   name: 'block2',
+      //   className: 'block',
+      //   md: 8,
+      //   xs: 24,
+      //   children: {
+      //     wrapper: { className: 'block-content' },
+      //     url: "https://www.terra.money/",
+      //     img: {
+      //       children:
+      //         'https://www.cryptocoinzone.com/wp-content/uploads/2021/10/Terra-LUNA-logo.png',
+      //     },
+      //   },
+      // },
     ],
   },
 };
@@ -637,7 +623,8 @@ export const Teams21DataSource = {
   },
 };
 
-// partners section
+// Organizer section
+
 export const Teams10DataSource = {
   wrapper: { className: 'home-page-wrapper teams1-wrapper' },
   page: { className: 'home-page teams1' },
@@ -649,7 +636,7 @@ export const Teams10DataSource = {
         name: 'title',
         children: (
           <span>
-            <p>Partners</p>
+            <p>Organizers and Partners</p>
           </span>
         ),
       },
@@ -664,12 +651,12 @@ export const Teams10DataSource = {
         md: 8,
         xs: 24,
         titleWrapper: {
+          url: "https://www.nublockchaingroup.com/",
           children: [
             {
               name: 'image',
               className: 'teams1-image',
-              url: "https://www.nublockchaingroup.com/",
-              children: nu,
+              children: nu, 
             },
             { 
               name: 'title', 
@@ -695,11 +682,11 @@ export const Teams10DataSource = {
         md: 8,
         xs: 24,
         titleWrapper: {
+          url: 'https://www.instagram.com/usc.cssa/?hl=en',
           children: [
             {
               name: 'image',
               className: 'teams1-image',
-              url: 'https://www.instagram.com/usc.cssa/?hl=en',
               children: usc,
             },
             { 
@@ -723,6 +710,113 @@ export const Teams10DataSource = {
     ],
   },
 };
+
+// partners section
+export const Teams90DataSource = {
+  wrapper: { className: 'home-page-wrapper teams9-wrapper' },
+  page: { className: 'home-page teams9' },
+  OverPack: { playScale: 0.3, className: '' },
+  block: {
+    className: 'block-wrapper',
+    gutter: 72,
+    children: [
+      {
+        name: 'block0',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.tsinghua.edu.cn/en/",
+          children: tsinghua,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Tsinghua University' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+            // {
+            //   name: 'content1',
+            //   className: 'teams9-content',
+            //   children: 'Top University in China',
+            // },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://blockchainchicago.finance/",
+          children: uchicago,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'UChicago Blockchain' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+            // {
+            //   name: 'content1',
+            //   className: 'teams9-content',
+            //   children: 'University of Chicago\'s Blockchain Club',
+            // },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.linkedin.com/in/zrosen/",
+          children: usc_bc,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'USC Blockchain Club' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+            // {
+            //   name: 'content1',
+            //   className: 'teams9-content',
+            //   children: 'Investor @ Ribbit Capital',
+            // },
+          ],
+        },
+      },
+    ],
+  },
+};
+
 
 // faq section
 export const Content30DataSource = {
@@ -933,6 +1027,13 @@ export const Footer20DataSource = {
     className: 'links',
     children: [
       {
+        name: 'discord',
+        href: 'https://discord.gg/JptHtVxJUk',
+        className: 'links-discord',
+        children:
+          'https://img.icons8.com/nolan/344/E6E6E6/808080/discord.png'
+      },
+      {
         name: 'linkedin',
         href: 'https://www.linkedin.com/company/mega-hackathon-2022/about/',
         className: 'links-linkedin',
@@ -959,217 +1060,6 @@ export const Footer20DataSource = {
         className: 'links-dorahacks',
         children:
           'https://img.icons8.com/nolan/344/E6E6E6/808080/internet.png',
-      },
-    ],
-  },
-};
-
-
-
-export const Teams30DataSource = {
-  wrapper: { className: 'home-page-wrapper teams3-wrapper' },
-  page: { className: 'home-page teams3' },
-  OverPack: { playScale: 0.3, className: '' },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: (
-          <span>
-            <p>Partners</p>
-          </span>
-        ),
-      },
-    ],
-  },
-  blockTop: {
-    className: 'block-top-wrapper',
-    children: [
-      {
-        name: 'block0',
-        className: 'block-top',
-        md: 8,
-        xs: 24,
-        titleWrapper: {
-          children: [
-            {
-              name: 'image',
-              className: 'teams3-top-image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-            },
-            {
-              name: 'title',
-              className: 'teams3-top-title',
-              children: 'NU Blockchain Group',
-            },
-            {
-              name: 'content',
-              className: 'teams3-top-job',
-              children: 'Co-Organizer',
-            },
-            {
-              name: 'content1',
-              className: 'teams3-top-content',
-              children:
-                'Northwestern University Primier Blockchain Group',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block1',
-        className: 'block-top',
-        md: 8,
-        xs: 24,
-        titleWrapper: {
-          children: [
-            {
-              name: 'image',
-              className: 'teams3-top-image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
-            },
-            { 
-              name: 'title', 
-              className: 'teams3-top-title', 
-              children: 'USC CSSA' },
-            {
-              name: 'content',
-              className: 'teams3-top-job',
-              children: 'Co-Organizer',
-            },
-            {
-              name: 'content1',
-              className: 'teams3-top-content',
-              children:
-                'USC China Association?',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block2',
-        className: 'block-top',
-        md: 8,
-        xs: 24,
-        titleWrapper: {
-          children: [
-            {
-              name: 'image',
-              className: 'teams3-top-image',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-            },
-            {
-              name: 'title',
-              className: 'teams3-top-title',
-              children: '叶秀英',
-            },
-            {
-              name: 'content',
-              className: 'teams3-top-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams3-top-content',
-              children:
-                'AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
-            },
-          ],
-        },
-      },
-    ],
-  },
-  block: {
-    className: 'block-wrapper',
-    gutter: 72,
-    children: [
-      {
-        name: 'block0',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams3-textWrapper',
-          children: [
-            { name: 'title', className: 'teams3-title', children: '叶秀英' },
-            {
-              name: 'content',
-              className: 'teams3-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams3-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block1',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*njqxS5Ky7CQAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams3-textWrapper',
-          children: [
-            { name: 'title', className: 'teams3-title', children: '韩勇' },
-            {
-              name: 'content',
-              className: 'teams3-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams3-content',
-              children: '语雀是一款优雅高效的在线文档编辑与协同工具。',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          children:
-            'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*--rVR4hclJYAAAAAAAAAAABjARQnAQ',
-        },
-        titleWrapper: {
-          className: 'teams3-textWrapper',
-          children: [
-            { name: 'title', className: 'teams3-title', children: '叶秀英' },
-            {
-              name: 'content',
-              className: 'teams3-job',
-              children: '公司+职位 信息暂缺',
-            },
-            {
-              name: 'content1',
-              className: 'teams3-content',
-              children: 'AntV 是蚂蚁金服全新一代数据可视化解决方案。',
-            },
-          ],
-        },
       },
     ],
   },

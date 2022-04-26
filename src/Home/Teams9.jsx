@@ -1,10 +1,10 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
-import { Row, Col, Divider } from 'antd';
+import { Row, Col, Divider} from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender, isImg } from './utils';
+import { getChildrenToRender } from './utils';
 
-class Teams3 extends React.PureComponent {
+class Teams9 extends React.PureComponent {
   getBlockChildren = (data) =>
     data.map((item, i) => {
       const { titleWrapper, image, ...$item } = item;
@@ -13,7 +13,9 @@ class Teams3 extends React.PureComponent {
           <Row>
             <Col span={7}>
               <div {...image}>
-                <img src={image.children} alt="img" />
+                <a href={image.url}>
+                  <img src={image.children} alt="img" />
+                </a>
               </div>
             </Col>
             <Col span={17}>
@@ -26,42 +28,21 @@ class Teams3 extends React.PureComponent {
       );
     });
 
-  getBlockTopChildren = (data) =>
-    data.map((item, i) => {
-      const { titleWrapper, ...$item } = item;
-      return (
-        <Col key={i.toString()} {...$item}>
-          {titleWrapper.children.map(getChildrenToRender)}
-        </Col>
-      );
-    });
-
   render() {
     const { ...props } = this.props;
     const { dataSource } = props;
     delete props.dataSource;
     delete props.isMobile;
     const listChildren = this.getBlockChildren(dataSource.block.children);
-    const listTopChildren = this.getBlockTopChildren(
-      dataSource.blockTop.children
-    );
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
-          <div {...dataSource.titleWrapper}>
+          <Divider key="divider" />
+          {/* <div {...dataSource.titleWrapper}>
             {dataSource.titleWrapper.children.map(getChildrenToRender)}
-          </div>
+          </div> */}
           <OverPack {...dataSource.OverPack}>
             <QueueAnim type="bottom" key="tween" leaveReverse>
-              <QueueAnim
-                type="bottom"
-                key="blockTop"
-                {...dataSource.blockTop}
-                component={Row}
-              >
-                {listTopChildren}
-              </QueueAnim>
-              <Divider key="divider" />
               <QueueAnim
                 type="bottom"
                 key="block"
@@ -78,4 +59,4 @@ class Teams3 extends React.PureComponent {
   }
 }
 
-export default Teams3;
+export default Teams9;
