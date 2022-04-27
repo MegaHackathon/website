@@ -417,7 +417,7 @@ export const Feature70DataSource = {
   },
 };
 
-// Sponsor Section
+// Sponsors Section
 export const Content120DataSource = {
   wrapper: { className: 'home-page-wrapper content12-wrapper' },
   page: { className: 'home-page content12' },
@@ -442,7 +442,7 @@ export const Content120DataSource = {
       },
     ],
   },
-  // Sponsor listing
+  // Sponsors listing
   block: {
     className: 'img-wrapper',
     children: [
