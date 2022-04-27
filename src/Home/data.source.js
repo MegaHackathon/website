@@ -9,8 +9,10 @@ import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
 import zackrosen from './images/speakers/zackrosen_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
 
-import solana from './images/sponsors/solana.svg';
+// import solana from './images/sponsors/solana.svg';
+import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
+import terra from './images/sponsors/terra.svg';
 
 import tsinghua from './images/partners/Tsinghua.svg';
 import uchicago from './images/partners/uchicago.jpg';
@@ -470,20 +472,20 @@ export const Content120DataSource = {
           },
         },
       },
-      // {
-      //   name: 'block2',
-      //   className: 'block',
-      //   md: 8,
-      //   xs: 24,
-      //   children: {
-      //     wrapper: { className: 'block-content' },
-      //     url: "https://www.terra.money/",
-      //     img: {
-      //       children:
-      //         'https://www.cryptocoinzone.com/wp-content/uploads/2021/10/Terra-LUNA-logo.png',
-      //     },
-      //   },
-      // },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: 'block-content' },
+          url: "https://www.terra.money/",
+          img: {
+            children:
+              terra
+          },
+        },
+      },
     ],
   },
 };
@@ -518,8 +520,8 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
-          url: "https://www.linkedin.com/in/boyuan-xu/",
-          children: jackxu,
+          url: "https://www.linkedin.com/in/cameron-dennis-b93b25104/",
+          children: camerondennis,
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
@@ -527,16 +529,16 @@ export const Teams21DataSource = {
             { 
               name: 'title', 
               className: 'teams2-title', 
-              children: 'Jack Xu' },
+              children: 'Cameron Dennis' },
             {
               name: 'content',
               className: 'teams2-job',
-              children: 'Judge and Speaker',
+              children: 'Judge',
             },
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'Co-founder @ EthSign; Blockchain lecturer @ USC',
+              children: 'Grant Leader @ NEAR Protocol',
             },
           ],
         },
@@ -593,7 +595,7 @@ export const Teams21DataSource = {
             {
               name: 'content',
               className: 'teams2-job',
-              children: 'Judge and Speaker',
+              children: 'Judge',
             },
             {
               name: 'content1',
@@ -611,8 +613,8 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
-          url: "https://www.linkedin.com/in/cameron-dennis-b93b25104/",
-          children: camerondennis,
+          url: "https://www.linkedin.com/in/boyuan-xu/",
+          children: jackxu,
         },
         titleWrapper: {
           className: 'teams2-textWrapper',
@@ -620,16 +622,16 @@ export const Teams21DataSource = {
             { 
               name: 'title', 
               className: 'teams2-title', 
-              children: 'Cameron Dennis' },
+              children: 'Jack Xu' },
             {
               name: 'content',
               className: 'teams2-job',
-              children: 'Judge and Speaker',
+              children: 'Speaker',
             },
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'President and Founder of Blockchain Acceleration Founder',
+              children: 'Co-founder @ EthSign; Blockchain lecturer @ USC',
             },
           ],
         },
