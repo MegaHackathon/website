@@ -72,60 +72,70 @@ export default class Home extends React.Component {
         dataSource={Nav00DataSource}
         isMobile={this.state.isMobile}
       />,
+      // header
       <Banner0
         id="Banner0_1"
         key="Banner0_1"
         dataSource={Banner01DataSource}
         isMobile={this.state.isMobile}
       />,
+      // about
       <Feature1
         id="Feature1_0"
         key="Feature1_0"
         dataSource={Feature10DataSource}
         isMobile={this.state.isMobile}
       />,
+      // bounties
       <Feature6
         id="Feature6_0"
         key="Feature6_0"
         dataSource={Feature60DataSource}
         isMobile={this.state.isMobile}
       />,
+      // tracks
       <Feature7
         id="Feature7_0"
         key="Feature7_0"
         dataSource={Feature70DataSource}
         isMobile={this.state.isMobile}
       />,
+      // sponsors
       <Content12
         id="Content12_0"
         key="Content12_0"
         dataSource={Content120DataSource}
         isMobile={this.state.isMobile}
       />,
+      // judges
       <Teams2
         id="Teams2_1"
         key="Teams2_1"
         dataSource={Teams21DataSource}
         isMobile={this.state.isMobile}
       />,
+      // organizer
       <Teams1
         id="Teams1_0"
         key="Teams1_0"
         dataSource={Teams10DataSource}
         isMobile={this.state.isMobile}
       />,
+      // partners
       <Teams9
         id="Teams9_0"
         key="Teams9_0"
         dataSource={Teams90DataSource}
         isMobile={this.state.isMobile}
       />,
+      // faq
       <Content3
         id="Content3_0"
         key="Content3_0"
         dataSource={Content30DataSource}
         isMobile={this.state.isMobile}
       />,
+      // contact + footer
       <Footer2
         id="Footer2_0"
         key="Footer2_0"
