@@ -12,7 +12,7 @@ import camerondennis from './images/speakers/camerondennis_icon.jpg';
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
-import terra from './images/sponsors/terra.svg';
+// import terra from './images/sponsors/terra.svg';
 
 import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
