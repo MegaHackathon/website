@@ -152,7 +152,7 @@ export const Banner01DataSource = {
   },
   button1: { 
     className: 'banner0-button', 
-    href: 'https://discord.gg/JptHtVxJUk',
+    href: 'https://forms.gle/cGZr2xYr5mMoGkab7',
     children: 'Apply to Hack' 
   },
   button2: { 
