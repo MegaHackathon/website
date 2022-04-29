@@ -39,9 +39,9 @@ function Content1(props) {
             xs: dataSource.text1Wrapper.xs,
           }}
         >
-          <h2 key="h1" {...dataSource.title}>
+          <div key="h1" {...dataSource.title}>
             {dataSource.title.children}
-          </h2>
+          </div>
         </TweenOne>
         <QueueAnim
           key="text"
