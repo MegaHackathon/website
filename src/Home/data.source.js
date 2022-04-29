@@ -12,9 +12,9 @@ import camerondennis from './images/speakers/camerondennis_icon.jpg';
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
-import terra from './images/sponsors/terra.svg';
+// import terra from './images/sponsors/terra.svg';
 
-import tsinghua from './images/partners/Tsinghua.svg';
+import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
 import usc_bc from './images/partners/usc_blockchain.svg';
 
@@ -152,7 +152,7 @@ export const Banner01DataSource = {
   },
   button1: { 
     className: 'banner0-button', 
-    href: 'ttps://discord.gg/JptHtVxJUk',
+    href: 'https://forms.gle/cGZr2xYr5mMoGkab7',
     children: 'Apply to Hack' 
   },
   button2: { 
@@ -472,20 +472,20 @@ export const Content120DataSource = {
           },
         },
       },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          url: "https://www.terra.money/",
-          img: {
-            children:
-              terra
-          },
-        },
-      },
+      // {
+      //   name: 'block2',
+      //   className: 'block',
+      //   md: 8,
+      //   xs: 24,
+      //   children: {
+      //     wrapper: { className: 'block-content' },
+      //     url: "https://www.terra.money/",
+      //     img: {
+      //       children:
+      //         terra
+      //     },
+      //   },
+      // },
     ],
   },
 };
@@ -754,7 +754,7 @@ export const Teams90DataSource = {
             { 
               name: 'title', 
               className: 'teams9-title', 
-              children: 'Tsinghua University' },
+              children: 'Tsinghua University Blockchain Association' },
             {
               name: 'content',
               className: 'teams9-job',
@@ -785,7 +785,7 @@ export const Teams90DataSource = {
             { 
               name: 'title', 
               className: 'teams9-title', 
-              children: 'UChicago Blockchain' },
+              children: 'UChicago Blockchain Club' },
             {
               name: 'content',
               className: 'teams9-job',
