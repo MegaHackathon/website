@@ -688,7 +688,7 @@ export const Teams10DataSource = {
               name: 'content1',
               className: 'teams1-content',
               children:
-                'Northwestern University\'s Primier Blockchain Organization',
+                'Northwestern University\'s Premier Blockchain Organization',
             },
           ],
         },
