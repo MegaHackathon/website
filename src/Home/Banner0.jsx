@@ -39,11 +39,16 @@ class Banner extends React.PureComponent {
           <Button ghost key="apply_button" {...dataSource.button1}>
             {dataSource.button1.children}
           </Button>
-          
           <Button ghost key="sponsor_button" {...dataSource.button2}>
             {dataSource.button2.children}
           </Button>
         </QueueAnim>
+        <iframe
+            class='banner0-3d-iframe'      
+            src="https://www.vectary.com/embed/viewer/v1/?model=d6c1f27d-6a27-4c7e-bd7d-bd19d7faa56c&amp;turntable=0.8" 
+            // src="https://app.vectary.com/p/57s12Vh42hw8oXceHVATiq"
+            frameborder="0">
+        </iframe>
         <TweenOne
           animation={{
             y: '-=20',
