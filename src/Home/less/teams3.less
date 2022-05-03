@@ -1,0 +1,74 @@
+@teams3: teams3;
+
+.@{teams3}-wrapper {
+  min-height: 334px; // 446px;
+  overflow: hidden;
+
+  .@{teams3} {
+    overflow: hidden;
+    height: 100%;
+    padding: 0px 24px;
+    margin-left: 29%;
+
+    >.title-wrapper {
+      margin: 0 auto 48px;
+    }
+
+    .block-wrapper {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      padding: 20px 0;
+      min-height: 152px;
+
+      .block {
+        margin-bottom: 48px;
+        vertical-align: text-top;
+
+        &.queue-anim-leaving {
+          position: relative !important;
+        }
+      }
+    }
+
+    &-image {
+      color: #404040;
+      width: 100%;
+
+      img {
+        width: 200%;
+        height: 200%;
+      }
+    }
+
+    &-textWrapper {
+      padding-left: 40%;
+      padding-top: 7%;
+    }
+
+    &-title {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+
+    &-job {
+      margin-bottom: 4px;
+    }
+
+    &-job,
+    &-content {
+      font-size: 15px;
+      color: #919191;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{teams3}-wrapper {
+    min-height: 1440px;
+
+    .@{teams3}.home-page {
+      padding-bottom: 0;
+    }
+  }
+}

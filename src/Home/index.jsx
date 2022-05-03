@@ -11,6 +11,7 @@ import Feature7 from './Feature7';
 import Content12 from './Content12';
 import Teams2 from './Teams2';
 import Teams1 from './Teams1';
+import Teams3 from './Teams3';
 import Teams9 from './Teams9';
 import Content3 from './Content3';
 import Footer2 from './Footer2';
@@ -24,6 +25,7 @@ import {
   Content120DataSource,
   Teams21DataSource,
   Teams10DataSource,
+  Teams30DataSource,
   Teams90DataSource,
   Content30DataSource,
   Footer20DataSource,
@@ -119,6 +121,13 @@ export default class Home extends React.Component {
         id="Teams1_0"
         key="Teams1_0"
         dataSource={Teams10DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      //special partners,
+      <Teams3
+        id="Teams3_0"
+        key="Teams3_0"
+        dataSource={Teams30DataSource}
         isMobile={this.state.isMobile}
       />,
       // partners

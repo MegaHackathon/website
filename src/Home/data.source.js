@@ -8,11 +8,15 @@ import jackxu from './images/speakers/jackxu_icon.jpg';
 import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
 import zackrosen from './images/speakers/zackrosen_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
+import vivienho from './images/speakers/vivienho_icon.jpg'
 
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
 // import terra from './images/sponsors/terra.svg';
+
+import edudao from './images/partners/edudao.svg';
+import bitdao from './images/partners/bitdao.jpg';
 
 import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
@@ -636,6 +640,37 @@ export const Teams21DataSource = {
           ],
         },
       },
+      {
+        name: 'block4',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://www.linkedin.com/in/vivienlho/",
+          children: vivienho,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Vivien Ho' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Principal @ Pear VC',
+            },
+          ],
+        },
+      },
     ],
   },
 };
@@ -727,6 +762,81 @@ export const Teams10DataSource = {
     ],
   },
 };
+//special partners section
+export const Teams30DataSource = {
+  wrapper: { className: 'home-page-wrapper teams3-wrapper' },
+  page: { className: 'home-pae teams3' },
+  Overpack: { playScale: 0.3, className: '' },
+  block: {
+    className: 'block-wrapper',
+    gutter: 72,
+    children: [
+      {
+        name: 'block0',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams3-image',
+          url: "https://www.edudao.org/",
+          children: edudao,
+        },
+        titleWrapper: {
+          className: 'teams3-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams3-title', 
+              children: 'EduDAO' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: 'Special Partner',
+            },
+            // {
+            //   name: 'content1',
+            //   className: 'teams9-content',
+            //   children: 'Top University in China',
+            // },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams3-image',
+          url: "https://www.bitdao.io/",
+          children: bitdao,
+        },
+        titleWrapper: {
+          className: 'teams3-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams3-title', 
+              children: 'BitDAO' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: 'Special Partner',
+            },
+            // {
+            //   name: 'content1',
+            //   className: 'teams9-content',
+            //   children: 'University of Chicago\'s Blockchain Club',
+            // },
+          
+          ],
+        },
+      },
+    ],
+  },
+}
 
 // partners section
 export const Teams90DataSource = {
