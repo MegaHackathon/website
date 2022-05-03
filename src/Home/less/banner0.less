@@ -18,7 +18,7 @@
     margin: auto;
     left: 0;
     right: 0;
-    font-size: 14px;
+    // font-size: 14px;
     color: @template-text-color-light;
     width: 850px;
     >.queue-anim-leaving {
@@ -44,8 +44,8 @@
     color: #eee;
     background: transparent;
     box-shadow: 0 0 0 transparent;
-    font-size: 1.5em;
-    height: 2em;
+    font-size: 1.3em;
+    height: 1.5em;
     margin: 10px 30px;
     border-radius: 1em;
     transition: background .45s @ease-out, box-shadow .45s @ease-out;
@@ -53,7 +53,7 @@
       color: #eee;
       border-color: #eee;
       background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+      box-shadow: 0 0 20px rgba(50, 250, 255, 0.75);
     }
     &:focus {
       color: #eee;
@@ -82,6 +82,7 @@
     font-family:neon;
     font-size: 6.4em;
     color: #e6feff;
+    line-height: 100%;
     text-shadow: 
     .05vw 0vw .125vw #e6feff, .1vw 0vw .125vw #e6feff, .2vw 0vw .0625vw #e6feff, 
 
@@ -121,11 +122,18 @@
       left: 0;
     }
     & &-neon-text{
-      font-size: 3.5em;
+      font-size: 3.2em;
     }
 
     & &-small-neon-text{
       font-size: 1.5em;
+    }
+
+    & &-button {
+      font-size: 1em;
+      height: 1.8em;
+      margin: 10px 30px;
+      border-radius: 0.75em;
     }
   }
 }
