@@ -17,7 +17,7 @@ import serum from './images/sponsors/serum.svg';
 // import terra from './images/sponsors/terra.svg';
 
 import edudao from './images/partners/edudao.svg';
-import bitdao from './images/partners/bitdao.jpg';
+import bitdao from './images/partners/bitdao.png';
 
 import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
@@ -732,7 +732,7 @@ export const Teams10DataSource = {
       {
         name: 'block0',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
         titleWrapper: {
           url: "https://www.nublockchaingroup.com/",
@@ -763,7 +763,7 @@ export const Teams10DataSource = {
       {
         name: 'block1',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
         titleWrapper: {
           url: 'https://www.instagram.com/usc.cssa.official/?hl=en',
@@ -794,75 +794,62 @@ export const Teams10DataSource = {
     ],
   },
 };
+
 //special partners section
 export const Teams30DataSource = {
   wrapper: { className: 'home-page-wrapper teams3-wrapper' },
   page: { className: 'home-pae teams3' },
-  Overpack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: '' },
   block: {
     className: 'block-wrapper',
-    gutter: 72,
     children: [
       {
         name: 'block0',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          url: "https://www.edudao.org/",
-          children: edudao,
-        },
         titleWrapper: {
-          className: 'teams3-textWrapper',
+          url: "https://www.edudao.org/",
           children: [
-            { 
-              name: 'title', 
-              className: 'teams3-title', 
-              children: 'EduDAO' },
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: edudao, 
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'EduDAO' },
             {
               name: 'content',
               className: 'teams3-job',
               children: 'Special Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'Top University in China',
-            // },
           ],
         },
       },
       {
         name: 'block1',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          url: "https://www.bitdao.io/",
-          children: bitdao,
-        },
         titleWrapper: {
-          className: 'teams3-textWrapper',
+          url: "https://www.bitdao.io/",
           children: [
-            { 
-              name: 'title', 
-              className: 'teams3-title', 
-              children: 'BitDAO' },
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: bitdao,
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'BitDAO' },
             {
               name: 'content',
               className: 'teams3-job',
               children: 'Special Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'University of Chicago\'s Blockchain Club',
-            // },
-          
           ],
         },
       },

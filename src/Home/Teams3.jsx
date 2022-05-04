@@ -7,23 +7,12 @@ import { getChildrenToRender } from './utils';
 class Teams3 extends React.PureComponent {
   getBlockChildren = (data) =>
     data.map((item, i) => {
-      const { titleWrapper, image, ...$item } = item;
+      const { titleWrapper, ...$item } = item;
       return (
         <Col key={i.toString()} {...$item}>
-          <Row>
-            <Col span={7}>
-              <div {...image}>
-                <a href={image.url}>
-                  <img src={image.children} alt="img" />
-                </a>
-              </div>
-            </Col>
-            <Col span={17}>
-              <QueueAnim {...titleWrapper} type="bottom">
-                {titleWrapper.children.map(getChildrenToRender)}
-              </QueueAnim>
-            </Col>
-          </Row>
+          <a href={titleWrapper.url}>
+            {titleWrapper.children.map(getChildrenToRender)}
+          </a>
         </Col>
       );
     });
@@ -37,20 +26,16 @@ class Teams3 extends React.PureComponent {
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
-          <Divider key="divider" />
-          {/* <div {...dataSource.titleWrapper}>
-            {dataSource.titleWrapper.children.map(getChildrenToRender)}
-          </div> */}
+        <Divider key="divider" />
           <OverPack {...dataSource.OverPack}>
-            <QueueAnim type="bottom" key="tween" leaveReverse>
-              <QueueAnim
-                type="bottom"
-                key="block"
-                {...dataSource.block}
-                component={Row}
-              >
-                {listChildren}
-              </QueueAnim>
+            <QueueAnim
+              type="bottom"
+              key="block"
+              leaveReverse
+              {...dataSource.block}
+              component={Row}
+            >
+              {listChildren}
             </QueueAnim>
           </OverPack>
         </div>
