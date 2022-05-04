@@ -9,6 +9,7 @@ import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
 import zackrosen from './images/speakers/zackrosen_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
 import vivienho from './images/speakers/vivienho_icon.jpg'
+import ajit from './images/speakers/ajit_icon.jpg'
 
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
@@ -555,7 +556,7 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
-          url: "https://www.linkedin.com/in/mattytay/",
+          url: "https://twitter.com/mattytay",
           children: mattytaylor,
         },
         titleWrapper: {
@@ -617,7 +618,7 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
-          url: "https://www.linkedin.com/in/boyuan-xu/",
+          url: "https://twitter.com/headcpx",
           children: jackxu,
         },
         titleWrapper: {
@@ -667,6 +668,37 @@ export const Teams21DataSource = {
               name: 'content1',
               className: 'teams2-content',
               children: 'Principal @ Pear VC',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block5',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://twitter.com/chainyoda",
+          children: ajit,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Ajit Tripathi' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Web3 Angel Investor',
             },
           ],
         },
