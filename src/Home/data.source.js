@@ -801,7 +801,7 @@ export const Teams30DataSource = {
         md: 12,
         xs: 24,
         titleWrapper: {
-          url: "https://www.edudao.org/",
+          url: "https://www.edudao.io/",
           children: [
             {
               name: 'image',
