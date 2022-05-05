@@ -742,20 +742,16 @@ export const Teams10DataSource = {
               className: 'teams1-image',
               children: nu, 
             },
-            { 
-              name: 'title', 
-              className: 'teams1-title', 
-              children: 'NU Blockchain Group' },
-            {
-              name: 'content',
-              className: 'teams1-job',
-              children: 'Co-Organizer',
-            },
             {
               name: 'content1',
               className: 'teams1-content',
               children:
-                'Northwestern University\'s Premier Blockchain Organization',
+                'Northwestern University Blockchain Group',
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: 'Co-Organizer',
             },
           ],
         },
@@ -773,20 +769,16 @@ export const Teams10DataSource = {
               className: 'teams1-image',
               children: usc,
             },
-            { 
-              name: 'title', 
-              className: 'teams1-title', 
-              children: 'USC CSSA' },
-            {
-              name: 'content',
-              className: 'teams1-job',
-              children: 'Co-Organizer',
-            },
             {
               name: 'content1',
               className: 'teams1-content',
               children:
                 'USC Chinese Students and Scholars Association',
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: 'Co-Organizer',
             },
           ],
         },
@@ -798,7 +790,7 @@ export const Teams10DataSource = {
 //special partners section
 export const Teams30DataSource = {
   wrapper: { className: 'home-page-wrapper teams3-wrapper' },
-  page: { className: 'home-pae teams3' },
+  page: { className: 'home-page teams3' },
   OverPack: { playScale: 0.3, className: '' },
   block: {
     className: 'block-wrapper',

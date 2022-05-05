@@ -26,7 +26,7 @@ class Teams3 extends React.PureComponent {
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
-        <Divider key="divider" />
+          <Divider key="divider" />
           <OverPack {...dataSource.OverPack}>
             <QueueAnim
               type="bottom"

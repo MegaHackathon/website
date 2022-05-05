@@ -15,6 +15,7 @@
       height: 100%;
       overflow: hidden;
       padding: 20px 0;
+      margin: 0 100px;
       .block {
         display: inline-block;
         text-align: center;
@@ -55,6 +56,11 @@
 
 @media screen and (max-width: 767px) {
   .@{teams3}-wrapper {
-    min-height: 1440px;
+    min-height: 400px;
+    .@{teams3} {
+      .block-wrapper {
+        margin: 0 0;
+      }
+    }
   }
 }
