@@ -617,7 +617,7 @@ export const Teams21DataSource = {
       {
         name: 'block3',
         className: 'block',
-        md: 8,
+        md: 8, 
         xs: 24,
         image: {
           name: 'image',
@@ -640,7 +640,7 @@ export const Teams21DataSource = {
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'Co-founder @ EthSign; Blockchain lecturer @ USC',
+              children: 'Co-founder @ EthSign'
             },
           ],
         },
@@ -728,7 +728,7 @@ export const Teams21DataSource = {
             {
               name: 'content',
               className: 'teams2-job',
-              children: 'Judge',
+              children: 'Speaker',
             },
             {
               name: 'content1',
