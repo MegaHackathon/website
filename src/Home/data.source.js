@@ -15,7 +15,7 @@ import spenser from './images/speakers/spenser_icon.jpg'
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
-import terra from './images/sponsors/terra.svg';
+// import terra from './images/sponsors/terra.svg';
 
 import edudao from './images/partners/edudao.svg';
 import bitdao from './images/partners/bitdao.png';
@@ -481,20 +481,20 @@ export const Content120DataSource = {
           },
         },
       },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        children: {
-          wrapper: { className: 'block-content' },
-          url: "https://www.terra.money/",
-          img: {
-            children:
-              terra
-          },
-        },
-      },
+      // {
+      //   name: 'block2',
+      //   className: 'block',
+      //   md: 8,
+      //   xs: 24,
+      //   children: {
+      //     wrapper: { className: 'block-content' },
+      //     url: "https://www.terra.money/",
+      //     img: {
+      //       children:
+      //         terra
+      //     },
+      //   },
+      // },
     ],
   },
 };
