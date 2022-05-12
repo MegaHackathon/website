@@ -1,26 +1,31 @@
 import React from 'react';
 import nu from './images/partners/nublockchain.png';
-import usc from './images/partners/usc_cssa.PNG';
+import usc from './images/partners/usc_cssa.png';
 
-import logo from './images/mega_logo.PNG';
+import logo from './images/mega_logo.png';
 
 import jackxu from './images/speakers/jackxu_icon.jpg';
 import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
 import zackrosen from './images/speakers/zackrosen_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
 import vivienho from './images/speakers/vivienho_icon.jpg'
+import ajit from './images/speakers/ajit_icon.jpg'
+import spenser from './images/speakers/spenser_icon.jpg'
 
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
-// import terra from './images/sponsors/terra.svg';
+import terra from './images/sponsors/terra.svg';
 
 import edudao from './images/partners/edudao.svg';
-import bitdao from './images/partners/bitdao.jpg';
+import bitdao from './images/partners/bitdao.png';
 
 import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
 import usc_bc from './images/partners/usc_blockchain.svg';
+import imperial_bc from './images/partners/imperial.jpg';
+import hku_bc from './images/partners/hku.jpg';
+import illini_bc from './images/partners/illini.jpg';
 
 
 // Nav bar
@@ -102,7 +107,7 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>Team</p>
+                  <p>Partners</p>
                 </span>
               ),
               name: 'text',
@@ -476,20 +481,20 @@ export const Content120DataSource = {
           },
         },
       },
-      // {
-      //   name: 'block2',
-      //   className: 'block',
-      //   md: 8,
-      //   xs: 24,
-      //   children: {
-      //     wrapper: { className: 'block-content' },
-      //     url: "https://www.terra.money/",
-      //     img: {
-      //       children:
-      //         terra
-      //     },
-      //   },
-      // },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: 'block-content' },
+          url: "https://www.terra.money/",
+          img: {
+            children:
+              terra
+          },
+        },
+      },
     ],
   },
 };
@@ -555,7 +560,7 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
-          url: "https://www.linkedin.com/in/mattytay/",
+          url: "https://twitter.com/mattytay",
           children: mattytaylor,
         },
         titleWrapper: {
@@ -612,12 +617,12 @@ export const Teams21DataSource = {
       {
         name: 'block3',
         className: 'block',
-        md: 8,
+        md: 8, 
         xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
-          url: "https://www.linkedin.com/in/boyuan-xu/",
+          url: "https://twitter.com/headcpx",
           children: jackxu,
         },
         titleWrapper: {
@@ -635,7 +640,7 @@ export const Teams21DataSource = {
             {
               name: 'content1',
               className: 'teams2-content',
-              children: 'Co-founder @ EthSign; Blockchain lecturer @ USC',
+              children: 'Co-founder @ EthSign'
             },
           ],
         },
@@ -671,6 +676,68 @@ export const Teams21DataSource = {
           ],
         },
       },
+      {
+        name: 'block5',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://twitter.com/chainyoda",
+          children: ajit,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Ajit Tripathi' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Web3 Angel Investor',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block6',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://twitter.com/huangspenser",
+          children: spenser,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Spenser Huang' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Speaker',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Managing Director @CoinList',
+            },
+          ],
+        },
+      },
     ],
   },
 };
@@ -700,7 +767,7 @@ export const Teams10DataSource = {
       {
         name: 'block0',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
         titleWrapper: {
           url: "https://www.nublockchaingroup.com/",
@@ -710,20 +777,16 @@ export const Teams10DataSource = {
               className: 'teams1-image',
               children: nu, 
             },
-            { 
-              name: 'title', 
-              className: 'teams1-title', 
-              children: 'NU Blockchain Group' },
-            {
-              name: 'content',
-              className: 'teams1-job',
-              children: 'Co-Organizer',
-            },
             {
               name: 'content1',
               className: 'teams1-content',
               children:
-                'Northwestern University\'s Premier Blockchain Organization',
+                'Northwestern University Blockchain Group',
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: 'Co-Organizer',
             },
           ],
         },
@@ -731,7 +794,7 @@ export const Teams10DataSource = {
       {
         name: 'block1',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
         titleWrapper: {
           url: 'https://www.instagram.com/usc.cssa.official/?hl=en',
@@ -741,20 +804,16 @@ export const Teams10DataSource = {
               className: 'teams1-image',
               children: usc,
             },
-            { 
-              name: 'title', 
-              className: 'teams1-title', 
-              children: 'USC CSSA' },
-            {
-              name: 'content',
-              className: 'teams1-job',
-              children: 'Co-Organizer',
-            },
             {
               name: 'content1',
               className: 'teams1-content',
               children:
                 'USC Chinese Students and Scholars Association',
+            },
+            {
+              name: 'content',
+              className: 'teams1-job',
+              children: 'Co-Organizer',
             },
           ],
         },
@@ -762,75 +821,62 @@ export const Teams10DataSource = {
     ],
   },
 };
+
 //special partners section
 export const Teams30DataSource = {
   wrapper: { className: 'home-page-wrapper teams3-wrapper' },
-  page: { className: 'home-pae teams3' },
-  Overpack: { playScale: 0.3, className: '' },
+  page: { className: 'home-page teams3' },
+  OverPack: { playScale: 0.3, className: '' },
   block: {
     className: 'block-wrapper',
-    gutter: 72,
     children: [
       {
         name: 'block0',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          url: "https://www.edudao.org/",
-          children: edudao,
-        },
         titleWrapper: {
-          className: 'teams3-textWrapper',
+          url: "https://www.edudao.io/",
           children: [
-            { 
-              name: 'title', 
-              className: 'teams3-title', 
-              children: 'EduDAO' },
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: edudao, 
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'EduDAO' },
             {
               name: 'content',
               className: 'teams3-job',
               children: 'Special Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'Top University in China',
-            // },
           ],
         },
       },
       {
         name: 'block1',
         className: 'block',
-        md: 8,
+        md: 12,
         xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams3-image',
-          url: "https://www.bitdao.io/",
-          children: bitdao,
-        },
         titleWrapper: {
-          className: 'teams3-textWrapper',
+          url: "https://www.bitdao.io/",
           children: [
-            { 
-              name: 'title', 
-              className: 'teams3-title', 
-              children: 'BitDAO' },
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: bitdao,
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'BitDAO' },
             {
               name: 'content',
               className: 'teams3-job',
               children: 'Special Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'University of Chicago\'s Blockchain Club',
-            // },
-          
           ],
         },
       },
@@ -901,11 +947,6 @@ export const Teams90DataSource = {
               className: 'teams9-job',
               children: 'Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'University of Chicago\'s Blockchain Club',
-            // },
           ],
         },
       },
@@ -917,7 +958,7 @@ export const Teams90DataSource = {
         image: {
           name: 'image',
           className: 'teams9-image',
-          url: "https://www.linkedin.com/in/zrosen/",
+          url: "https://www.blockchainusc.com/",
           children: usc_bc,
         },
         titleWrapper: {
@@ -932,11 +973,84 @@ export const Teams90DataSource = {
               className: 'teams9-job',
               children: 'Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'Investor @ Ribbit Capital',
-            // },
+          ],
+        },
+      },
+      {
+        name: 'block3',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://twitter.com/blockchain_ic",
+          children: imperial_bc,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Imperial Blockchain Group' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://linktr.ee/hkublockchain",
+          children: hku_bc,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Hong Kong University Blockchain Club' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://illiniblockchain.notion.site/illiniblockchain/Illini-Blockchain-Public-ac1f93f3ad984e3fa00ce6a42c69b335",
+          children: illini_bc,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Illini Blockchain' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
           ],
         },
       },

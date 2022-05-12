@@ -44,6 +44,12 @@ class Banner extends React.PureComponent {
             {dataSource.button2.children}
           </Button>
         </QueueAnim>
+        <iframe
+            className='banner0-3d-iframe'      
+            title="3D Banner"
+            id="d0d80458-cc51-4c69-8eac-b6b89a49342a" 
+            src="https://app.vectary.com/viewer/v1/?model=d0d80458-cc51-4c69-8eac-b6b89a49342a&env=studio1&turntable=3&showInteractionPrompt=0" 
+            frameBorder="0"/>
         <TweenOne
           animation={{
             y: '-=20',

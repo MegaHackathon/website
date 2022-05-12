@@ -1,63 +1,54 @@
 @teams3: teams3;
 
 .@{teams3}-wrapper {
-  min-height: 334px; // 446px;
+  min-height: 250px; // 446px;
   overflow: hidden;
-
   .@{teams3} {
     overflow: hidden;
     height: 100%;
-    padding: 0px 24px;
-    margin-left: 29%;
-
-    >.title-wrapper {
+    padding: 0 24px;
+    > .title-wrapper {
       margin: 0 auto 48px;
     }
-
     .block-wrapper {
       position: relative;
       height: 100%;
       overflow: hidden;
       padding: 20px 0;
-      min-height: 152px;
-
+      margin: 0 100px;
       .block {
-        margin-bottom: 48px;
-        vertical-align: text-top;
-
+        display: inline-block;
+        text-align: center;
+        // margin-bottom: 48px;
         &.queue-anim-leaving {
           position: relative !important;
         }
       }
     }
-
+    &-image, &-title, &-job, &-content {
+      width: 200px;
+      margin: auto;
+      line-height: 1.5;
+    }
     &-image {
       color: #404040;
-      width: 100%;
-
       img {
-        width: 200%;
-        height: 200%;
+        width: 100%;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px fade(#000, 12);
       }
     }
-
-    &-textWrapper {
-      padding-left: 40%;
-      padding-top: 7%;
-    }
-
     &-title {
-      font-size: 18px;
-      margin-bottom: 2px;
+      font-size: 24px;
+      margin: 24px auto 8px;
     }
-
     &-job {
-      margin-bottom: 4px;
+      margin: 8px auto;
     }
-
-    &-job,
-    &-content {
-      font-size: 15px;
+    &-job, &-content {
+      font-size: 12px;
       color: #919191;
     }
   }
@@ -65,10 +56,11 @@
 
 @media screen and (max-width: 767px) {
   .@{teams3}-wrapper {
-    min-height: 1440px;
-
-    .@{teams3}.home-page {
-      padding-bottom: 0;
+    min-height: 400px;
+    .@{teams3} {
+      .block-wrapper {
+        margin: 0 0;
+      }
     }
   }
 }
