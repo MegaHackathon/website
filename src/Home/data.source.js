@@ -18,7 +18,7 @@ import serum from './images/sponsors/serum.svg';
 // import terra from './images/sponsors/terra.svg';
 
 import edudao from './images/partners/edudao.svg';
-import bitdao from './images/partners/bitdao.png';
+import bitdao from './images/partners/bitdao.svg';
 
 import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
@@ -26,6 +26,12 @@ import usc_bc from './images/partners/usc_blockchain.svg';
 import imperial_bc from './images/partners/imperial.jpg';
 import hku_bc from './images/partners/hku.jpg';
 import illini_bc from './images/partners/illini.jpg';
+import lbl from './images/partners/lbl.png';
+import nyu_bc from './images/partners/nyu.jpg';
+import uci from './images/partners/uci.jpg';
+import umich from './images/partners/umich.jpg';
+import cmu from './images/partners/cmu.png';
+import cambridge from './images/partners/cambridge.png';
 
 
 // Nav bar
@@ -525,7 +531,7 @@ export const Teams21DataSource = {
         name: 'block0',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -556,7 +562,7 @@ export const Teams21DataSource = {
         name: 'block1',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -587,7 +593,7 @@ export const Teams21DataSource = {
         name: 'block2',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -618,7 +624,7 @@ export const Teams21DataSource = {
         name: 'block3',
         className: 'block',
         md: 8, 
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -649,7 +655,7 @@ export const Teams21DataSource = {
         name: 'block4',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -680,7 +686,7 @@ export const Teams21DataSource = {
         name: 'block5',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -711,7 +717,7 @@ export const Teams21DataSource = {
         name: 'block6',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -897,7 +903,7 @@ export const Teams90DataSource = {
         name: 'block0',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -916,11 +922,6 @@ export const Teams90DataSource = {
               className: 'teams9-job',
               children: 'Partner',
             },
-            // {
-            //   name: 'content1',
-            //   className: 'teams9-content',
-            //   children: 'Top University in China',
-            // },
           ],
         },
       },
@@ -928,7 +929,7 @@ export const Teams90DataSource = {
         name: 'block1',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -954,7 +955,7 @@ export const Teams90DataSource = {
         name: 'block2',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -980,7 +981,7 @@ export const Teams90DataSource = {
         name: 'block3',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1003,10 +1004,10 @@ export const Teams90DataSource = {
         },
       },
       {
-        name: 'block2',
+        name: 'block4',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1029,10 +1030,10 @@ export const Teams90DataSource = {
         },
       },
       {
-        name: 'block2',
+        name: 'block5',
         className: 'block',
         md: 8,
-        xs: 24,
+        xs: 12,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1046,6 +1047,162 @@ export const Teams90DataSource = {
               name: 'title', 
               className: 'teams9-title', 
               children: 'Illini Blockchain' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block6',
+        className: 'block',
+        md: 8,
+        xs: 12,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://londonblockchainlabs.com/",
+          children: lbl,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'London Blockchain Lab' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block7',
+        className: 'block',
+        md: 8,
+        xs: 12,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://btcnyu.com/",
+          children: nyu_bc,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'NYU Blockchain Tech Club' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block8',
+        className: 'block',
+        md: 8,
+        xs: 12,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.blockchainuci.org/",
+          children: uci,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Blockchain at UCI' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block9',
+        className: 'block',
+        md: 8,
+        xs: 12,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.michiganblockchain.org/",
+          children: umich,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Blockchain at Michigan' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block10',
+        className: 'block',
+        md: 8,
+        xs: 12,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://cmublockchain.xyz/",
+          children: cmu,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'CMU Blockchain Group' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block11',
+        className: 'block',
+        md: 8,
+        xs: 12,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://cambridgeblockchain.org/",
+          children: cambridge,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Cambridge Blockchain Society' },
             {
               name: 'content',
               className: 'teams9-job',
