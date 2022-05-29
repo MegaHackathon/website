@@ -32,7 +32,7 @@ import uci from './images/partners/uci.jpg';
 import umich from './images/partners/umich.jpg';
 import cmu from './images/partners/cmu.png';
 import cambridge from './images/partners/cambridge.png';
-
+import gt from './images/partners/gt.jpg';
 
 // Nav bar
 export const Nav00DataSource = {
@@ -47,6 +47,23 @@ export const Nav00DataSource = {
     children: [
       {
         name: 'item0',
+        className: 'header0-item',
+        children: {
+          href: 'https://www.megahackathon-nft.com/home',
+          children: [
+            {
+              children: (
+                <span>
+                  <p>NFTs</p>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
+        },
+      },
+      {
+        name: 'item1',
         className: 'header0-item',
         children: {
           href: '#Feature1_0',
@@ -67,7 +84,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item1',
+        name: 'item2',
         className: 'header0-item',
         children: {
           href: '#Feature6_0',
@@ -84,7 +101,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item2',
+        name: 'item3',
         className: 'header0-item',
         children: {
           href: '#Content12_0',
@@ -105,7 +122,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item3',
+        name: 'item4',
         className: 'header0-item',
         children: {
           href: '#Teams1_0',
@@ -122,7 +139,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item4',
+        name: 'item5',
         className: 'header0-item',
         children: {
           href: '#Content3_0',
@@ -531,7 +548,7 @@ export const Teams21DataSource = {
         name: 'block0',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -562,7 +579,7 @@ export const Teams21DataSource = {
         name: 'block1',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -593,7 +610,7 @@ export const Teams21DataSource = {
         name: 'block2',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -624,7 +641,7 @@ export const Teams21DataSource = {
         name: 'block3',
         className: 'block',
         md: 8, 
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -655,7 +672,7 @@ export const Teams21DataSource = {
         name: 'block4',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -686,7 +703,7 @@ export const Teams21DataSource = {
         name: 'block5',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -717,7 +734,7 @@ export const Teams21DataSource = {
         name: 'block6',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams2-image',
@@ -903,7 +920,7 @@ export const Teams90DataSource = {
         name: 'block0',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -929,7 +946,7 @@ export const Teams90DataSource = {
         name: 'block1',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -955,7 +972,7 @@ export const Teams90DataSource = {
         name: 'block2',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -981,7 +998,7 @@ export const Teams90DataSource = {
         name: 'block3',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1007,7 +1024,7 @@ export const Teams90DataSource = {
         name: 'block4',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1033,7 +1050,7 @@ export const Teams90DataSource = {
         name: 'block5',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1059,7 +1076,7 @@ export const Teams90DataSource = {
         name: 'block6',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1085,7 +1102,7 @@ export const Teams90DataSource = {
         name: 'block7',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1111,7 +1128,7 @@ export const Teams90DataSource = {
         name: 'block8',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1137,7 +1154,7 @@ export const Teams90DataSource = {
         name: 'block9',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1163,7 +1180,7 @@ export const Teams90DataSource = {
         name: 'block10',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1189,7 +1206,7 @@ export const Teams90DataSource = {
         name: 'block11',
         className: 'block',
         md: 8,
-        xs: 12,
+        xs: 24,
         image: {
           name: 'image',
           className: 'teams9-image',
@@ -1203,6 +1220,32 @@ export const Teams90DataSource = {
               name: 'title', 
               className: 'teams9-title', 
               children: 'Cambridge Blockchain Society' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block12',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.blockchain-gt.io/",
+          children: gt,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Georgia Tech Blockchain' },
             {
               name: 'content',
               className: 'teams9-job',
