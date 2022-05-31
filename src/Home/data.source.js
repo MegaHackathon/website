@@ -6,11 +6,11 @@ import logo from './images/mega_logo.png';
 
 import jackxu from './images/speakers/jackxu_icon.jpg';
 import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
-import zackrosen from './images/speakers/zackrosen_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
 import vivienho from './images/speakers/vivienho_icon.jpg'
 import ajit from './images/speakers/ajit_icon.jpg'
 import spenser from './images/speakers/spenser_icon.jpg'
+import zacharyschwartzman from './images/speakers/zacharyschwartzman.jpg';
 
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
@@ -33,6 +33,8 @@ import umich from './images/partners/umich.jpg';
 import cmu from './images/partners/cmu.png';
 import cambridge from './images/partners/cambridge.png';
 import gt from './images/partners/gt.jpg';
+import utexas from './images/partners/utexas.png';
+import oxford from './images/partners/oxford.jpg';
 
 // Nav bar
 export const Nav00DataSource = {
@@ -609,37 +611,6 @@ export const Teams21DataSource = {
       {
         name: 'block2',
         className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams2-image',
-          url: "https://www.linkedin.com/in/zrosen/",
-          children: zackrosen,
-        },
-        titleWrapper: {
-          className: 'teams2-textWrapper',
-          children: [
-            { 
-              name: 'title', 
-              className: 'teams2-title', 
-              children: 'Zack Rosen' },
-            {
-              name: 'content',
-              className: 'teams2-job',
-              children: 'Judge',
-            },
-            {
-              name: 'content1',
-              className: 'teams2-content',
-              children: 'Investor @ Ribbit Capital',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block',
         md: 8, 
         xs: 24,
         image: {
@@ -669,7 +640,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block4',
+        name: 'block3',
         className: 'block',
         md: 8,
         xs: 24,
@@ -700,7 +671,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block5',
+        name: 'block4',
         className: 'block',
         md: 8,
         xs: 24,
@@ -726,6 +697,37 @@ export const Teams21DataSource = {
               name: 'content1',
               className: 'teams2-content',
               children: 'Web3 Angel Investor',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block5',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://www.linkedin.com/in/zachschwartzman/",
+          children: zacharyschwartzman,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Zachary Schwartzman' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Investor @ z19 Capital',
             },
           ],
         },
@@ -1246,6 +1248,58 @@ export const Teams90DataSource = {
               name: 'title', 
               className: 'teams9-title', 
               children: 'Georgia Tech Blockchain' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block13',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.texasblockchain.org/",
+          children: utexas,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Texas Blockchain' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block14',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://discord.gg/oxfordblockchainsociety",
+          children: oxford,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Oxford Blockchain Society' },
             {
               name: 'content',
               className: 'teams9-job',
