@@ -5,17 +5,20 @@ import usc from './images/partners/usc_cssa.png';
 import logo from './images/mega_logo.png';
 
 import jackxu from './images/speakers/jackxu_icon.jpg';
+import potterli from './images/speakers/potterli.jpeg';
 import mattytaylor from './images/speakers/mattytaylor_icon.jpg';
 import camerondennis from './images/speakers/camerondennis_icon.jpg';
 import vivienho from './images/speakers/vivienho_icon.jpg'
 import ajit from './images/speakers/ajit_icon.jpg'
 import spenser from './images/speakers/spenser_icon.jpg'
 import zacharyschwartzman from './images/speakers/zacharyschwartzman.jpg';
+import joe from './images/speakers/joe.jpg';
 
 // import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
 // import terra from './images/sponsors/terra.svg';
+import polygon from './images/sponsors/polygon.png';
 
 import edudao from './images/partners/edudao.svg';
 import bitdao from './images/partners/bitdao.svg';
@@ -506,20 +509,20 @@ export const Content120DataSource = {
           },
         },
       },
-      // {
-      //   name: 'block2',
-      //   className: 'block',
-      //   md: 8,
-      //   xs: 24,
-      //   children: {
-      //     wrapper: { className: 'block-content' },
-      //     url: "https://www.terra.money/",
-      //     img: {
-      //       children:
-      //         terra
-      //     },
-      //   },
-      // },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: 'block-content' },
+          url: "https://polygon.technology/",
+          img: {
+            children:
+              polygon
+          },
+        },
+      },
     ],
   },
 };
@@ -642,6 +645,37 @@ export const Teams21DataSource = {
       {
         name: 'block3',
         className: 'block',
+        md: 8, 
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://twitter.com/Potterlee222",
+          children: potterli,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Potter Li' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Speaker',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Co-Founder @ EthSign & Blockchain@USC'
+            },
+          ],
+        },
+      },
+      {
+        name: 'block4',
+        className: 'block',
         md: 8,
         xs: 24,
         image: {
@@ -671,7 +705,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block4',
+        name: 'block5',
         className: 'block',
         md: 8,
         xs: 24,
@@ -702,7 +736,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block5',
+        name: 'block6',
         className: 'block',
         md: 8,
         xs: 24,
@@ -733,7 +767,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block6',
+        name: 'block7',
         className: 'block',
         md: 8,
         xs: 24,
@@ -759,6 +793,37 @@ export const Teams21DataSource = {
               name: 'content1',
               className: 'teams2-content',
               children: 'Managing Director @CoinList',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block8',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://twitter.com/caulfieldjoe1",
+          children: joe,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Joe' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Speaker',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Solana Community Advocate and Content Creator',
             },
           ],
         },
