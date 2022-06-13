@@ -14,14 +14,14 @@ import spenser from './images/speakers/spenser_icon.jpg'
 import zacharyschwartzman from './images/speakers/zacharyschwartzman.jpg';
 import joe from './images/speakers/joe.jpg';
 
-// import solana from './images/sponsors/solana.svg';
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
-// import terra from './images/sponsors/terra.svg';
 import polygon from './images/sponsors/polygon.png';
 
 import edudao from './images/partners/edudao.svg';
 import bitdao from './images/partners/bitdao.svg';
+import metajam from './images/partners/metajam.png';
+import m7e from './images/partners/m7e.jpeg';
 
 import tsinghua from './images/partners/Tsinghua.png';
 import uchicago from './images/partners/uchicago.jpg';
@@ -970,6 +970,57 @@ export const Teams30DataSource = {
           ],
         },
       },
+      {
+        name: 'block2',
+        className: 'block',
+        md: 12,
+        xs: 24,
+        titleWrapper: {
+          url: "https://www.metajam.studio/",
+          children: [
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: metajam,
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'BitDAO' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: 'Special Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block3',
+        className: 'block',
+        md: 12,
+        xs: 24,
+        titleWrapper: {
+          url: "https://www.m7e.io/en-US ",
+          children: [
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: m7e,
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'BitDAO' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: 'Special Partner',
+            },
+          ],
+        },
+      },
+      
     ],
   },
 }
