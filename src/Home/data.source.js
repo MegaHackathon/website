@@ -14,6 +14,7 @@ import spenser from './images/speakers/spenser_icon.jpg'
 import zacharyschwartzman from './images/speakers/zacharyschwartzman.jpg';
 import joe from './images/speakers/joe.jpg';
 import yuki from './images/speakers/yuki.jpeg';
+import michelle from './images/speakers/michelle.jpeg';
 
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
@@ -39,6 +40,7 @@ import cambridge from './images/partners/cambridge.png';
 import gt from './images/partners/gt.jpg';
 import utexas from './images/partners/utexas.png';
 import oxford from './images/partners/oxford.jpg';
+import panews from './images/partners/panews.png'
 
 // Nav bar
 export const Nav00DataSource = {
@@ -615,6 +617,37 @@ export const Teams21DataSource = {
       {
         name: 'block2',
         className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://twitter.com/michellelsun",
+          children: michelle,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Michelle Sun' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge and Speaker',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Core Contributor @ Project Serum',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block3',
+        className: 'block',
         md: 8, 
         xs: 24,
         image: {
@@ -644,7 +677,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block3',
+        name: 'block4',
         className: 'block',
         md: 8, 
         xs: 24,
@@ -675,7 +708,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block4',
+        name: 'block5',
         className: 'block',
         md: 8,
         xs: 24,
@@ -706,7 +739,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block5',
+        name: 'block6',
         className: 'block',
         md: 8,
         xs: 24,
@@ -737,7 +770,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block6',
+        name: 'block7',
         className: 'block',
         md: 8,
         xs: 24,
@@ -768,7 +801,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block7',
+        name: 'block8',
         className: 'block',
         md: 8,
         xs: 24,
@@ -799,7 +832,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block8',
+        name: 'block9',
         className: 'block',
         md: 8,
         xs: 24,
@@ -830,7 +863,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block9',
+        name: 'block10',
         className: 'block',
         md: 8,
         xs: 24,
@@ -1452,6 +1485,32 @@ export const Teams90DataSource = {
               name: 'content',
               className: 'teams9-job',
               children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block15',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://www.panewslab.com/zh/index.html",
+          children: panews,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'PANews' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Media Partner',
             },
           ],
         },
