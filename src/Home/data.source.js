@@ -13,6 +13,7 @@ import ajit from './images/speakers/ajit_icon.jpg'
 import spenser from './images/speakers/spenser_icon.jpg'
 import zacharyschwartzman from './images/speakers/zacharyschwartzman.jpg';
 import joe from './images/speakers/joe.jpg';
+import yuki from './images/speakers/yuki.jpeg';
 
 import solana from './images/sponsors/Solana.png';
 import serum from './images/sponsors/serum.svg';
@@ -54,7 +55,7 @@ export const Nav00DataSource = {
         name: 'item0',
         className: 'header0-item',
         children: {
-          href: 'https://www.megahackathon-nft.com/home',
+          href: 'https://mega-hackathon-nft.com/',
           children: [
             {
               children: (
@@ -774,6 +775,37 @@ export const Teams21DataSource = {
         image: {
           name: 'image',
           className: 'teams2-image',
+          url: "https://twitter.com/ballsyalchemist",
+          children: yuki,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Yuki Yuminaga' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'Investment @ Fenbushi Capital',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block8',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
           url: "https://twitter.com/huangspenser",
           children: spenser,
         },
@@ -798,7 +830,7 @@ export const Teams21DataSource = {
         },
       },
       {
-        name: 'block8',
+        name: 'block9',
         className: 'block',
         md: 8,
         xs: 24,
