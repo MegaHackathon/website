@@ -163,6 +163,24 @@ export const Nav00DataSource = {
           ],
         },
       },
+      {
+        name: 'item6',
+        className: 'header0-item',
+        children: {
+          href: 'https://fionapan.notion.site/Mega-Hackathon-2022-27db49e65ede4cd38d6c37d3046a8b00',
+          children: [
+            {
+              children: (
+                <span>
+                  <p>Submission Guideline and Judging Criteria</p>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
+        },
+      },
+     
     ],
   },
   mobileMenu: { className: 'header0-mobile-menu' },
