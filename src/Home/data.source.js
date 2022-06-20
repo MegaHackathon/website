@@ -40,6 +40,7 @@ import cambridge from './images/partners/cambridge.png';
 import gt from './images/partners/gt.jpg';
 import utexas from './images/partners/utexas.png';
 import oxford from './images/partners/oxford.jpg';
+import beta from './images/partners/beta.png';
 import panews from './images/partners/panews.png'
 
 // Nav bar
@@ -1103,8 +1104,7 @@ export const Teams30DataSource = {
             },
           ],
         },
-      },
-      
+      }, 
     ],
   },
 }
@@ -1510,6 +1510,32 @@ export const Teams90DataSource = {
       },
       {
         name: 'block15',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams9-image',
+          url: "https://betafellow.com/",
+          children: beta,
+        },
+        titleWrapper: {
+          className: 'teams9-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams9-title', 
+              children: 'Beta Fellowship' },
+            {
+              name: 'content',
+              className: 'teams9-job',
+              children: 'Partner',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block16',
         className: 'block',
         md: 8,
         xs: 24,
