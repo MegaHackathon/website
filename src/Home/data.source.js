@@ -74,6 +74,23 @@ export const Nav00DataSource = {
         name: 'item1',
         className: 'header0-item',
         children: {
+          href: 'https://bit.ly/3OsjcTS',
+          children: [
+            {
+              children: (
+                <span>
+                  <p>Submission Guideline and Judging Criteria</p>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
+        },
+      },
+      {
+        name: 'item2',
+        className: 'header0-item',
+        children: {
           href: '#Feature1_0',
           children: [
             {
@@ -92,7 +109,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item2',
+        name: 'item3',
         className: 'header0-item',
         children: {
           href: '#Feature6_0',
@@ -109,7 +126,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item3',
+        name: 'item4',
         className: 'header0-item',
         children: {
           href: '#Content12_0',
@@ -130,7 +147,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item4',
+        name: 'item5',
         className: 'header0-item',
         children: {
           href: '#Teams1_0',
@@ -147,7 +164,7 @@ export const Nav00DataSource = {
         },
       },
       {
-        name: 'item5',
+        name: 'item6',
         className: 'header0-item',
         children: {
           href: '#Content3_0',
@@ -163,23 +180,7 @@ export const Nav00DataSource = {
           ],
         },
       },
-      {
-        name: 'item6',
-        className: 'header0-item',
-        children: {
-          href: 'https://fionapan.notion.site/Mega-Hackathon-2022-27db49e65ede4cd38d6c37d3046a8b00',
-          children: [
-            {
-              children: (
-                <span>
-                  <p>Submission Guideline and Judging Criteria</p>
-                </span>
-              ),
-              name: 'text',
-            },
-          ],
-        },
-      },
+     
      
     ],
   },
@@ -210,8 +211,8 @@ export const Banner01DataSource = {
   },
   button1: { 
     className: 'banner0-button', 
-    href: 'https://forms.gle/cGZr2xYr5mMoGkab7',
-    children: 'Apply to Hack' 
+    href: 'https://bit.ly/3OsjcTS',
+    children: 'Submit Your Hack' 
   },
   button2: { 
     className: 'banner0-button', 
