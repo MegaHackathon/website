@@ -40,7 +40,7 @@ import cambridge from './images/partners/cambridge.png';
 import gt from './images/partners/gt.jpg';
 import utexas from './images/partners/utexas.png';
 import oxford from './images/partners/oxford.jpg';
-import beta from './images/partners/beta.png';
+import beta from './images/partners/beta.jpeg';
 import panews from './images/partners/panews.png'
 
 // Nav bar
@@ -1105,6 +1105,31 @@ export const Teams30DataSource = {
           ],
         },
       }, 
+      {
+        name: 'block3',
+        className: 'block',
+        md: 12,
+        xs: 24,
+        titleWrapper: {
+          url: "https://betafellow.com/ ",
+          children: [
+            {
+              name: 'image',
+              className: 'teams3-image',
+              children: beta,
+            },
+            // { 
+            //   name: 'title', 
+            //   className: 'teams3-title', 
+            //   children: 'BitDAO' },
+            {
+              name: 'content',
+              className: 'teams3-job',
+              children: 'Special Partner',
+            },
+          ],
+        },
+      }, 
     ],
   },
 }
@@ -1510,32 +1535,6 @@ export const Teams90DataSource = {
       },
       {
         name: 'block15',
-        className: 'block',
-        md: 8,
-        xs: 24,
-        image: {
-          name: 'image',
-          className: 'teams9-image',
-          url: "https://betafellow.com/",
-          children: beta,
-        },
-        titleWrapper: {
-          className: 'teams9-textWrapper',
-          children: [
-            { 
-              name: 'title', 
-              className: 'teams9-title', 
-              children: 'Beta Fellowship' },
-            {
-              name: 'content',
-              className: 'teams9-job',
-              children: 'Partner',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block16',
         className: 'block',
         md: 8,
         xs: 24,
