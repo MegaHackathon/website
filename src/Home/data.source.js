@@ -13,6 +13,7 @@ import ajit from './images/speakers/ajit_icon.jpg'
 import spenser from './images/speakers/spenser_icon.jpg'
 import zacharyschwartzman from './images/speakers/zacharyschwartzman.jpg';
 import joe from './images/speakers/joe.jpg';
+import julie from './images/speakers/julie.jpg';
 import yuki from './images/speakers/yuki.jpeg';
 import michelle from './images/speakers/michelle.jpeg';
 
@@ -909,6 +910,37 @@ export const Teams21DataSource = {
               name: 'content1',
               className: 'teams2-content',
               children: 'Solana Community Advocate and Content Creator',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block11',
+        className: 'block',
+        md: 8,
+        xs: 24,
+        image: {
+          name: 'image',
+          className: 'teams2-image',
+          url: "https://www.linkedin.com/in/julie-shi",
+          children: julie,
+        },
+        titleWrapper: {
+          className: 'teams2-textWrapper',
+          children: [
+            { 
+              name: 'title', 
+              className: 'teams2-title', 
+              children: 'Julie' },
+            {
+              name: 'content',
+              className: 'teams2-job',
+              children: 'Judge',
+            },
+            {
+              name: 'content1',
+              className: 'teams2-content',
+              children: 'ENS DAO Fellow',
             },
           ],
         },
